@@ -1,0 +1,166 @@
+{
+  "fetchedAt": "2026-04-21T12:00:00.000Z",
+  "landings": [
+    {
+      "name": "Point Loma Sportfishing",
+      "data": {
+        "date": "2026-04-21",
+        "entries": [
+          {
+            "boat": "Mission Belle",
+            "tripType": "Full Day Coronado Islands",
+            "anglers": 31,
+            "fishCounts": [
+              {
+                "species": "Yellowtail",
+                "count": 61
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Seaforth Sportfishing",
+      "data": {
+        "date": "2026-04-21",
+        "entries": [
+          {
+            "boat": "New Seaforth",
+            "tripType": "1/2 Day PM",
+            "anglers": 28,
+            "fishCounts": [
+              {
+                "species": "Barracuda",
+                "count": 3
+              },
+              {
+                "species": "Bonito",
+                "count": 4
+              },
+              {
+                "species": "Calico Bass",
+                "count": 20
+              },
+              {
+                "species": "Rockfish",
+                "count": 1
+              },
+              {
+                "species": "Yellowtail",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "boat": "New Seaforth",
+            "tripType": "1/2 Day AM",
+            "anglers": 25,
+            "fishCounts": [
+              {
+                "species": "Rockfish",
+                "count": 120
+              }
+            ]
+          },
+          {
+            "boat": "Polaris Supreme",
+            "tripType": "3 Day",
+            "anglers": 24,
+            "fishCounts": [
+              {
+                "species": "Bluefin Tuna",
+                "count": 144
+              },
+              {
+                "species": "Dorado",
+                "count": 1
+              },
+              {
+                "species": "Yellowfin Tuna",
+                "count": 4
+              },
+              {
+                "species": "Yellowtail",
+                "count": 114
+              }
+            ]
+          },
+          {
+            "boat": "San Diego",
+            "tripType": "Full Day Coronado Islands",
+            "anglers": 36,
+            "fishCounts": [
+              {
+                "species": "Calico Bass",
+                "count": 16
+              },
+              {
+                "species": "Yellowtail",
+                "count": 108
+              }
+            ]
+          },
+          {
+            "boat": "Sea Watch",
+            "tripType": "3/4 Day",
+            "anglers": 13,
+            "fishCounts": [
+              {
+                "species": "Bonito",
+                "count": 4
+              },
+              {
+                "species": "Calico Bass",
+                "count": 5
+              },
+              {
+                "species": "Rockfish",
+                "count": 56
+              },
+              {
+                "species": "Sculpin",
+                "count": 4
+              },
+              {
+                "species": "Sheephead",
+                "count": 2
+              },
+              {
+                "species": "Vermilion Rockfish",
+                "count": 26
+              },
+              {
+                "species": "Whitefish",
+                "count": 27
+              }
+            ]
+          },
+          {
+            "boat": "Tribute",
+            "tripType": "1.5 Day",
+            "anglers": 19,
+            "fishCounts": [
+              {
+                "species": "Bluefin Tuna",
+                "count": 38
+              },
+              {
+                "species": "Bonito",
+                "count": 12
+              },
+              {
+                "species": "Dorado",
+                "count": 1
+              },
+              {
+                "species": "Yellowfin Tuna",
+                "count": 5
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

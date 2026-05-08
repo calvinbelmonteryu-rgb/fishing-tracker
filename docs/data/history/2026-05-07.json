@@ -1,0 +1,135 @@
+{
+  "fetchedAt": "2026-05-07T12:00:00.000Z",
+  "landings": [
+    {
+      "name": "H&M Landing",
+      "data": {
+        "date": "2026-05-07",
+        "entries": [
+          {
+            "boat": "Premier",
+            "tripType": "1/2 Day PM",
+            "anglers": 23,
+            "fishCounts": [
+              {
+                "species": "Calico Bass",
+                "count": 1
+              },
+              {
+                "species": "Red Rockfish",
+                "count": 48
+              },
+              {
+                "species": "Rockfish",
+                "count": 27
+              },
+              {
+                "species": "Sculpin",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "boat": "Premier",
+            "tripType": "1/2 Day AM",
+            "anglers": 16,
+            "fishCounts": [
+              {
+                "species": "Rockfish",
+                "count": 103
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Seaforth Sportfishing",
+      "data": {
+        "date": "2026-05-07",
+        "entries": [
+          {
+            "boat": "New Seaforth",
+            "tripType": "1/2 Day AM",
+            "anglers": 11,
+            "fishCounts": [
+              {
+                "species": "Barracuda",
+                "count": 3
+              },
+              {
+                "species": "Calico Bass",
+                "count": 1
+              },
+              {
+                "species": "Rockfish",
+                "count": 60
+              },
+              {
+                "species": "Vermilion Rockfish",
+                "count": 11
+              },
+              {
+                "species": "Whitefish",
+                "count": 6
+              },
+              {
+                "species": "Yellowtail",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "boat": "New Seaforth",
+            "tripType": "1/2 Day Twilight",
+            "anglers": 12,
+            "fishCounts": [
+              {
+                "species": "Calico Bass",
+                "count": 3
+              },
+              {
+                "species": "Rockfish",
+                "count": 50
+              },
+              {
+                "species": "Sand Bass",
+                "count": 1
+              },
+              {
+                "species": "Sculpin",
+                "count": 3
+              }
+            ]
+          },
+          {
+            "boat": "New Seaforth",
+            "tripType": "1/2 Day PM",
+            "anglers": 40,
+            "fishCounts": [
+              {
+                "species": "Yellowtail",
+                "count": 10
+              }
+            ]
+          },
+          {
+            "boat": "San Diego",
+            "tripType": "Full Day Coronado Islands",
+            "anglers": 22,
+            "fishCounts": [
+              {
+                "species": "Rockfish",
+                "count": 146
+              },
+              {
+                "species": "Yellowtail",
+                "count": 5
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

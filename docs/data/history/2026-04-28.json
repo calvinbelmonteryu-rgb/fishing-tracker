@@ -1,19 +1,23 @@
 {
-  "fetchedAt": "2026-04-15T12:00:00.000Z",
+  "fetchedAt": "2026-04-28T12:00:00.000Z",
   "landings": [
     {
       "name": "H&M Landing",
       "data": {
-        "date": "2026-04-15",
+        "date": "2026-04-28",
         "entries": [
           {
-            "boat": "Vendetta 2",
-            "tripType": "Full Day",
-            "anglers": 15,
+            "boat": "Grande",
+            "tripType": "Full Day Coronado Islands",
+            "anglers": 22,
             "fishCounts": [
               {
+                "species": "Rockfish",
+                "count": 6
+              },
+              {
                 "species": "Yellowtail",
-                "count": 29
+                "count": 47
               }
             ]
           }
@@ -23,16 +27,16 @@
     {
       "name": "Point Loma Sportfishing",
       "data": {
-        "date": "2026-04-15",
+        "date": "2026-04-28",
         "entries": [
           {
-            "boat": "Mission Belle",
-            "tripType": "Full Day Coronado Islands",
-            "anglers": 11,
+            "boat": "New Lo-An",
+            "tripType": "2 Day",
+            "anglers": 22,
             "fishCounts": [
               {
-                "species": "Yellowtail",
-                "count": 26
+                "species": "Bluefin Tuna",
+                "count": 49
               }
             ]
           }
@@ -42,77 +46,84 @@
     {
       "name": "Seaforth Sportfishing",
       "data": {
-        "date": "2026-04-15",
+        "date": "2026-04-28",
         "entries": [
           {
             "boat": "New Seaforth",
             "tripType": "1/2 Day PM",
-            "anglers": 54,
+            "anglers": 23,
             "fishCounts": [
               {
-                "species": "Bonito",
-                "count": 2
-              },
-              {
                 "species": "Calico Bass",
-                "count": 1
+                "count": 5
               },
               {
-                "species": "Sculpin",
+                "species": "Whitefish",
                 "count": 1
               },
               {
                 "species": "Yellowtail",
-                "count": 2
+                "count": 1
               }
             ]
           },
           {
             "boat": "New Seaforth",
             "tripType": "1/2 Day AM",
-            "anglers": 22,
+            "anglers": 29,
             "fishCounts": [
               {
-                "species": "Calico Bass",
+                "species": "Rockfish",
+                "count": 92
+              },
+              {
+                "species": "Sculpin",
+                "count": 10
+              },
+              {
+                "species": "Sheephead",
                 "count": 2
               },
               {
-                "species": "Rockfish",
-                "count": 7
-              },
+                "species": "Whitefish",
+                "count": 18
+              }
+            ]
+          },
+          {
+            "boat": "Pacific Voyager",
+            "tripType": "2 Day",
+            "anglers": 17,
+            "fishCounts": [
               {
-                "species": "Vermilion Rockfish",
-                "count": 44
-              },
-              {
-                "species": "Yellowtail",
-                "count": 10
+                "species": "Bluefin Tuna",
+                "count": 66
               }
             ]
           },
           {
             "boat": "Polaris Supreme",
             "tripType": "2 Day",
-            "anglers": 23,
+            "anglers": 24,
             "fishCounts": [
               {
                 "species": "Bluefin Tuna",
-                "count": 92
-              },
-              {
-                "species": "Dorado",
-                "count": 3
+                "count": 52
               }
             ]
           },
           {
             "boat": "San Diego",
             "tripType": "Full Day Coronado Islands",
-            "anglers": 14,
+            "anglers": 36,
             "fishCounts": [
               {
+                "species": "Barracuda",
+                "count": 20
+              },
+              {
                 "species": "Yellowtail",
-                "count": 22
+                "count": 49
               }
             ]
           }

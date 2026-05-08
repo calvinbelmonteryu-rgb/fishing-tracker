@@ -1,0 +1,62 @@
+{
+  "fetchedAt": "2026-04-17T12:00:00.000Z",
+  "landings": [
+    {
+      "name": "H&M Landing",
+      "data": {
+        "date": "2026-04-17",
+        "entries": [
+          {
+            "boat": "Grande",
+            "tripType": "Full Day Coronado Islands",
+            "anglers": 18,
+            "fishCounts": [
+              {
+                "species": "Yellowtail",
+                "count": 53
+              }
+            ]
+          },
+          {
+            "boat": "Premier",
+            "tripType": "1/2 Day PM",
+            "anglers": 18,
+            "fishCounts": [
+              {
+                "species": "Calico Bass",
+                "count": 4
+              },
+              {
+                "species": "Rockfish",
+                "count": 63
+              },
+              {
+                "species": "Sand Bass",
+                "count": 1
+              },
+              {
+                "species": "Sculpin",
+                "count": 8
+              },
+              {
+                "species": "Sheephead",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "boat": "Premier",
+            "tripType": "1/2 Day AM",
+            "anglers": 30,
+            "fishCounts": [
+              {
+                "species": "Rockfish",
+                "count": 142
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

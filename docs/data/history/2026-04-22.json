@@ -1,0 +1,143 @@
+{
+  "fetchedAt": "2026-04-22T12:00:00.000Z",
+  "landings": [
+    {
+      "name": "Fisherman's Landing",
+      "data": {
+        "date": "2026-04-22",
+        "entries": [
+          {
+            "boat": "Dolphin",
+            "tripType": "1/2 Day AM",
+            "anglers": 21,
+            "fishCounts": [
+              {
+                "species": "Halibut",
+                "count": 4
+              },
+              {
+                "species": "Lingcod",
+                "count": 1
+              },
+              {
+                "species": "Rockfish",
+                "count": 45
+              },
+              {
+                "species": "Sand Bass",
+                "count": 11
+              },
+              {
+                "species": "Sculpin",
+                "count": 15
+              },
+              {
+                "species": "Sheephead",
+                "count": 1
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Point Loma Sportfishing",
+      "data": {
+        "date": "2026-04-22",
+        "entries": [
+          {
+            "boat": "Mission Belle",
+            "tripType": "Full Day Coronado Islands",
+            "anglers": 27,
+            "fishCounts": [
+              {
+                "species": "Yellowtail",
+                "count": 70
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Seaforth Sportfishing",
+      "data": {
+        "date": "2026-04-22",
+        "entries": [
+          {
+            "boat": "New Seaforth",
+            "tripType": "1/2 Day PM",
+            "anglers": 18,
+            "fishCounts": [
+              {
+                "species": "Calico Bass",
+                "count": 51
+              },
+              {
+                "species": "Rockfish",
+                "count": 3
+              }
+            ]
+          },
+          {
+            "boat": "New Seaforth",
+            "tripType": "1/2 Day AM",
+            "anglers": 19,
+            "fishCounts": [
+              {
+                "species": "Rockfish",
+                "count": 54
+              },
+              {
+                "species": "Sculpin",
+                "count": 1
+              },
+              {
+                "species": "Whitefish",
+                "count": 6
+              }
+            ]
+          },
+          {
+            "boat": "Pacific Voyager",
+            "tripType": "2 Day",
+            "anglers": 13,
+            "fishCounts": [
+              {
+                "species": "Bluefin Tuna",
+                "count": 52
+              },
+              {
+                "species": "Lingcod",
+                "count": 4
+              },
+              {
+                "species": "Rockfish",
+                "count": 20
+              },
+              {
+                "species": "Yellowfin Tuna",
+                "count": 12
+              },
+              {
+                "species": "Yellowtail",
+                "count": 37
+              }
+            ]
+          },
+          {
+            "boat": "San Diego",
+            "tripType": "Full Day Coronado Islands",
+            "anglers": 36,
+            "fishCounts": [
+              {
+                "species": "Yellowtail",
+                "count": 88
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "fetchedAt": "2026-05-04T12:00:00.000Z",
+  "landings": [
+    {
+      "name": "Seaforth Sportfishing",
+      "data": {
+        "date": "2026-05-04",
+        "entries": [
+          {
+            "boat": "New Seaforth",
+            "tripType": "1/2 Day PM",
+            "anglers": 13,
+            "fishCounts": [
+              {
+                "species": "Barracuda",
+                "count": 1
+              },
+              {
+                "species": "Bonito",
+                "count": 2
+              },
+              {
+                "species": "Calico Bass",
+                "count": 6
+              },
+              {
+                "species": "Yellowtail",
+                "count": 3
+              }
+            ]
+          },
+          {
+            "boat": "New Seaforth",
+            "tripType": "1/2 Day AM",
+            "anglers": 11,
+            "fishCounts": [
+              {
+                "species": "Rockfish",
+                "count": 62
+              },
+              {
+                "species": "Sculpin",
+                "count": 4
+              },
+              {
+                "species": "Sheephead",
+                "count": 4
+              },
+              {
+                "species": "Whitefish",
+                "count": 21
+              }
+            ]
+          },
+          {
+            "boat": "New Seaforth",
+            "tripType": "1/2 Day Twilight",
+            "anglers": 7,
+            "fishCounts": [
+              {
+                "species": "Rockfish",
+                "count": 70
+              },
+              {
+                "species": "Sand Bass",
+                "count": 1
+              },
+              {
+                "species": "Sculpin",
+                "count": 35
+              }
+            ]
+          },
+          {
+            "boat": "Polaris Supreme",
+            "tripType": "3 Day",
+            "anglers": 23,
+            "fishCounts": [
+              {
+                "species": "Bluefin Tuna",
+                "count": 138
+              },
+              {
+                "species": "Yellowtail",
+                "count": 7
+              }
+            ]
+          },
+          {
+            "boat": "San Diego",
+            "tripType": "Full Day Coronado Islands",
+            "anglers": 29,
+            "fishCounts": [
+              {
+                "species": "Rockfish",
+                "count": 6
+              },
+              {
+                "species": "Sand Bass",
+                "count": 1
+              },
+              {
+                "species": "White Seabass",
+                "count": 1
+              },
+              {
+                "species": "Whitefish",
+                "count": 145
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

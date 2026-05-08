@@ -1,0 +1,93 @@
+{
+  "fetchedAt": "2026-04-11T12:00:00.000Z",
+  "landings": [
+    {
+      "name": "H&M Landing",
+      "data": {
+        "date": "2026-04-11",
+        "entries": [
+          {
+            "boat": "Grande",
+            "tripType": "Full Day Coronado Islands",
+            "anglers": 26,
+            "fishCounts": [
+              {
+                "species": "Bonito",
+                "count": 6
+              },
+              {
+                "species": "Lingcod",
+                "count": 1
+              },
+              {
+                "species": "Rockfish",
+                "count": 5
+              },
+              {
+                "species": "Yellowtail",
+                "count": 39
+              }
+            ]
+          },
+          {
+            "boat": "Malihini",
+            "tripType": "3/4 Day",
+            "anglers": 8,
+            "fishCounts": [
+              {
+                "species": "Red Rockfish",
+                "count": 11
+              },
+              {
+                "species": "Rockfish",
+                "count": 69
+              }
+            ]
+          },
+          {
+            "boat": "Premier",
+            "tripType": "1/2 Day PM",
+            "anglers": 29,
+            "fishCounts": [
+              {
+                "species": "Red Rockfish",
+                "count": 56
+              },
+              {
+                "species": "Rockfish",
+                "count": 43
+              },
+              {
+                "species": "Sand Bass",
+                "count": 2
+              },
+              {
+                "species": "Sculpin",
+                "count": 6
+              },
+              {
+                "species": "Sheephead",
+                "count": 3
+              },
+              {
+                "species": "Whitefish",
+                "count": 50
+              }
+            ]
+          },
+          {
+            "boat": "Premier",
+            "tripType": "1/2 Day AM",
+            "anglers": 51,
+            "fishCounts": [
+              {
+                "species": "Rockfish",
+                "count": 200
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "fetchedAt": "2026-04-29T12:00:00.000Z",
+  "landings": [
+    {
+      "name": "H&M Landing",
+      "data": {
+        "date": "2026-04-29",
+        "entries": [
+          {
+            "boat": "Grande",
+            "tripType": "Full Day Coronado Islands",
+            "anglers": 35,
+            "fishCounts": [
+              {
+                "species": "Yellowtail",
+                "count": 75
+              }
+            ]
+          },
+          {
+            "boat": "Patriot (SD)",
+            "tripType": "1/2 Day Twilight",
+            "anglers": 4,
+            "fishCounts": [
+              {
+                "species": "Lingcod",
+                "count": 2
+              },
+              {
+                "species": "Rockfish",
+                "count": 19
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
