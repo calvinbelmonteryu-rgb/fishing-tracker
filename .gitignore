@@ -1,0 +1,9 @@
+node_modules/
+*.log
+.DS_Store
+.env
+
+# Local SQLite DB — GitHub Actions uses JSON output instead
+data/fishcounts.db
+data/fishcounts.db-shm
+data/fishcounts.db-wal

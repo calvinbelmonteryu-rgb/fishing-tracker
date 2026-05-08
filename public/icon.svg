@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="90" fill="#1565C0"/>
+  <!-- Fish body -->
+  <ellipse cx="225" cy="256" rx="145" ry="95" fill="white"/>
+  <!-- Tail fin -->
+  <polygon points="375,256 445,185 445,327" fill="white"/>
+  <!-- Eye -->
+  <circle cx="168" cy="238" r="20" fill="#1565C0"/>
+  <circle cx="162" cy="233" r="6" fill="white"/>
+  <!-- Mouth -->
+  <path d="M105 265 Q115 275 125 265" stroke="#1565C0" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- Fin -->
+  <path d="M200 165 Q225 210 260 200" stroke="white" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <!-- Waves -->
+  <path d="M60 360 Q100 340 140 360 Q180 380 220 360 Q260 340 300 360" stroke="white" stroke-width="9" fill="none" stroke-linecap="round" opacity="0.45"/>
+  <path d="M220 400 Q260 380 300 400 Q340 420 380 400 Q420 380 450 400" stroke="white" stroke-width="9" fill="none" stroke-linecap="round" opacity="0.3"/>
+</svg>

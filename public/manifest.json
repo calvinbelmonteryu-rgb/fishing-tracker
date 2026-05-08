@@ -1,0 +1,17 @@
+{
+  "name": "San Diego Fish Counts",
+  "short_name": "Fish Counts",
+  "description": "Daily fish counts from San Diego sport fishing landings",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1565C0",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

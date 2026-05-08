@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>San Diego Fish Counts</title>
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#1565C0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Fish Counts">
+  <link rel="apple-touch-icon" href="/icon.svg">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background: #f0f0f0;
+      color: #333;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #fff;
+      min-height: 100vh;
+      padding: 30px 40px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 30px;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #888;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .refresh-bar {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .refresh-bar span {
+      color: #999;
+      font-size: 13px;
+      margin-right: 10px;
+    }
+
+    .refresh-btn {
+      background: #fff;
+      color: #333;
+      border: 1px solid #ccc;
+      padding: 5px 14px;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 13px;
+      font-family: inherit;
+    }
+
+    .refresh-btn:hover { background: #f5f5f5; }
+    .refresh-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+    /* Filter bar */
+    .filter-bar {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 28px;
+      flex-wrap: wrap;
+    }
+
+    .filter-group {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      flex: 1;
+      min-width: 140px;
+    }
+
+    .filter-group label {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #999;
+    }
+
+    .filter-group select {
+      font-family: inherit;
+      font-size: 14px;
+      padding: 6px 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      background: #fff;
+      color: #333;
+      cursor: pointer;
+    }
+
+    .filter-group select:focus {
+      outline: none;
+      border-color: #aaa;
+    }
+
+    .date-section {
+      margin-bottom: 40px;
+    }
+
+    .date-heading {
+      font-size: 22px;
+      font-weight: 500;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+    }
+
+    .fish-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .fish-table th {
+      text-align: left;
+      font-weight: 600;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #999;
+      padding: 6px 8px;
+      border-bottom: 2px solid #ddd;
+    }
+
+    .fish-table td {
+      padding: 8px;
+      border-bottom: 1px solid #eee;
+      vertical-align: top;
+    }
+
+    .fish-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .fish-table .boat-cell {
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .fish-table .count-cell {
+      line-height: 1.6;
+    }
+
+    .no-data {
+      color: #999;
+      font-size: 14px;
+      font-style: italic;
+    }
+
+    .loading {
+      text-align: center;
+      padding: 60px 0;
+      color: #999;
+    }
+
+    .error-msg {
+      color: #c0392b;
+      font-size: 14px;
+      padding: 10px 0;
+    }
+
+    .no-results {
+      color: #999;
+      font-size: 14px;
+      font-style: italic;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    /* Mobile: card layout */
+    @media (max-width: 600px) {
+      .container { padding: 16px; }
+      h1 { font-size: 22px; }
+      .date-heading { font-size: 18px; }
+
+      .fish-table thead { display: none; }
+
+      .fish-table,
+      .fish-table tbody,
+      .fish-table tr,
+      .fish-table td {
+        display: block;
+        width: 100%;
+      }
+
+      .fish-table tr {
+        border: 1px solid #e0e0e0;
+        border-radius: 6px;
+        margin-bottom: 10px;
+        padding: 10px 12px;
+      }
+
+      .fish-table tr:last-child td { border-bottom: none; }
+
+      .fish-table td {
+        padding: 3px 0;
+        border: none;
+        font-size: 14px;
+      }
+
+      .fish-table td[data-label]::before {
+        content: attr(data-label) ": ";
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.4px;
+        color: #999;
+      }
+
+      .fish-table .boat-cell {
+        font-size: 15px;
+        margin-bottom: 4px;
+        white-space: normal;
+      }
+
+      .fish-table .boat-cell::before { display: none; }
+
+      .fish-table .count-cell { line-height: 1.7; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>San Diego Fish Counts</h1>
+    <div class="subtitle">Daily counts from San Diego sport fishing landings</div>
+
+    <div class="refresh-bar">
+      <span id="lastUpdated"></span>
+      <button class="refresh-btn" id="refreshBtn" onclick="loadData()">Refresh</button>
+    </div>
+
+    <div class="filter-bar">
+      <div class="filter-group">
+        <label for="filterTrip">Trip Length</label>
+        <select id="filterTrip" onchange="applyFilters()">
+          <option value="">All</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="filterBoat">Boat</label>
+        <select id="filterBoat" onchange="applyFilters()">
+          <option value="">All</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="content">
+      <div class="loading">Loading fish counts...</div>
+    </div>
+  </div>
+
+  <script>
+    // All loaded entries stored globally for filtering
+    let allData = []; // Array of { date, entries[] }
+
+    async function loadData() {
+      const btn = document.getElementById('refreshBtn');
+      const content = document.getElementById('content');
+      btn.disabled = true;
+      btn.textContent = 'Loading...';
+
+      try {
+        const res = await fetch('/api/fishcounts');
+        const data = await res.json();
+
+        const time = new Date(data.fetchedAt).toLocaleString();
+        document.getElementById('lastUpdated').textContent = 'Updated: ' + time;
+
+        // Build grouped-by-date structure from live data
+        const byDate = {};
+        for (const landing of data.landings) {
+          if (landing.error || !landing.data || !landing.data.entries) continue;
+          const date = landing.data.date || 'Unknown';
+          if (!byDate[date]) byDate[date] = [];
+          for (const e of landing.data.entries) {
+            if (e.fishCounts && e.fishCounts.length > 0) {
+              byDate[date].push({ landing: landing.name, boat: e.boat, tripType: e.tripType, anglers: e.anglers, fishCounts: e.fishCounts });
+            }
+          }
+        }
+
+        const todayDates = new Set(Object.keys(byDate));
+
+        // Fetch history
+        const datesRes = await fetch('/api/history/dates?limit=14');
+        const datesData = await datesRes.json();
+        const pastDates = datesData.dates.filter(d => !todayDates.has(d));
+
+        for (const date of pastDates) {
+          const dateRes = await fetch('/api/history/date/' + date);
+          const dateData = await dateRes.json();
+          if (!dateData.landings || dateData.landings.length === 0) continue;
+          if (!byDate[date]) byDate[date] = [];
+          for (const landing of dateData.landings) {
+            for (const e of landing.entries) {
+              if (e.fishCounts && e.fishCounts.length > 0) {
+                byDate[date].push({ landing: landing.name, boat: e.boat, tripType: e.tripType, anglers: e.anglers, fishCounts: e.fishCounts });
+              }
+            }
+          }
+        }
+
+        // Sort each date's entries
+        const tripOrder = ['1/2 Day AM', '1/2 Day PM', '1/2 Day', '3/4 Day', 'Full Day', 'Full Day Coronado Islands', '1.5 Day', '2 Day', '3 Day', 'Open Party'];
+        for (const date of Object.keys(byDate)) {
+          byDate[date].sort((a, b) => {
+            const ai = tripOrder.findIndex(t => (a.tripType || '').toLowerCase().includes(t.toLowerCase()));
+            const bi = tripOrder.findIndex(t => (b.tripType || '').toLowerCase().includes(t.toLowerCase()));
+            const aIdx = ai >= 0 ? ai : 999;
+            const bIdx = bi >= 0 ? bi : 999;
+            if (aIdx !== bIdx) return aIdx - bIdx;
+            return (a.boat || '').localeCompare(b.boat || '');
+          });
+        }
+
+        // Build allData sorted by date descending
+        allData = Object.keys(byDate).sort().reverse().map(date => ({ date, entries: byDate[date] }));
+
+        populateFilters();
+        renderContent();
+      } catch (err) {
+        content.innerHTML = '<div class="error-msg">Failed to load fish counts. Please try again.</div>';
+      }
+
+      btn.disabled = false;
+      btn.textContent = 'Refresh';
+    }
+
+    function populateFilters() {
+      const tripSet = new Set();
+      const boatSet = new Set();
+      for (const { entries } of allData) {
+        for (const e of entries) {
+          if (e.tripType) tripSet.add(e.tripType);
+          if (e.boat) boatSet.add(e.boat);
+        }
+      }
+
+      const tripOrder = ['1/2 Day AM', '1/2 Day PM', '1/2 Day', '3/4 Day', 'Full Day', 'Full Day Coronado Islands', '1.5 Day', '2 Day', '3 Day', 'Open Party'];
+      const sortedTrips = [...tripSet].sort((a, b) => {
+        const ai = tripOrder.findIndex(t => a.toLowerCase().includes(t.toLowerCase()));
+        const bi = tripOrder.findIndex(t => b.toLowerCase().includes(t.toLowerCase()));
+        return (ai >= 0 ? ai : 999) - (bi >= 0 ? bi : 999);
+      });
+      const sortedBoats = [...boatSet].sort((a, b) => a.localeCompare(b));
+
+      setOptions('filterTrip', sortedTrips);
+      setOptions('filterBoat', sortedBoats);
+    }
+
+    function setOptions(id, values) {
+      const sel = document.getElementById(id);
+      const current = sel.value;
+      while (sel.options.length > 1) sel.remove(1);
+      for (const v of values) {
+        const opt = document.createElement('option');
+        opt.value = v;
+        opt.textContent = v;
+        sel.appendChild(opt);
+      }
+      if (values.includes(current)) sel.value = current;
+    }
+
+    function applyFilters() {
+      renderContent();
+    }
+
+    function renderContent() {
+      const tripFilter = document.getElementById('filterTrip').value;
+      const boatFilter = document.getElementById('filterBoat').value;
+      const content = document.getElementById('content');
+
+      let html = '';
+      let totalVisible = 0;
+
+      for (const { date, entries } of allData) {
+        const filtered = entries.filter(e => {
+          if (tripFilter && e.tripType !== tripFilter) return false;
+          if (boatFilter && e.boat !== boatFilter) return false;
+          return true;
+        });
+
+        if (filtered.length === 0) continue;
+        totalVisible += filtered.length;
+
+        html += '<div class="date-section">' +
+          '<h2 class="date-heading">' + esc(formatDate(date)) + '</h2>' +
+          '<table class="fish-table"><thead><tr>' +
+          '<th>Boat</th><th>Landing</th><th>Trip Type</th><th>Anglers</th><th>Fish Count</th>' +
+          '</tr></thead><tbody>';
+
+        for (const e of filtered) {
+          html += '<tr>' +
+            '<td class="boat-cell">' + esc(e.boat) + '</td>' +
+            '<td data-label="Landing">' + esc(e.landing) + '</td>' +
+            '<td data-label="Trip Type">' + esc(e.tripType || '') + '</td>' +
+            '<td data-label="Anglers">' + (e.anglers || '-') + '</td>' +
+            '<td class="count-cell" data-label="Fish Count">' + renderCounts(e.fishCounts) + '</td>' +
+            '</tr>';
+        }
+
+        html += '</tbody></table></div>';
+      }
+
+      if (totalVisible === 0 && allData.length > 0) {
+        html = '<div class="no-results">No results match the selected filters.</div>';
+      }
+
+      content.innerHTML = html || '<div class="loading">Loading fish counts...</div>';
+    }
+
+    function renderCounts(counts) {
+      return counts.map(c => esc(c.count + ' ' + c.species)).join(', ');
+    }
+
+    function formatDate(isoDate) {
+      if (!isoDate) return '';
+      const parts = isoDate.split('-');
+      if (parts.length !== 3) return isoDate;
+      const months = ['January','February','March','April','May','June',
+        'July','August','September','October','November','December'];
+      const m = parseInt(parts[1], 10) - 1;
+      const d = parseInt(parts[2], 10);
+      return months[m] + ' ' + d + ', ' + parts[0];
+    }
+
+    function esc(str) {
+      if (!str) return '';
+      const div = document.createElement('div');
+      div.textContent = String(str);
+      return div.innerHTML;
+    }
+
+    loadData();
+  </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+name: Daily Fish Count Scrape
+
+on:
+  schedule:
+    # 07:15 America/Los_Angeles. GitHub cron is UTC — PST=UTC-8, PDT=UTC-7.
+    # 15:15 UTC covers 07:15 PDT; 16:15 UTC covers 07:15 PST. Run both so DST shifts don't skip.
+    - cron: '15 15 * * *'
+    - cron: '15 16 * * *'
+  workflow_dispatch: {} # allows manual "Run workflow" button
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies (no native modules)
+        run: npm install --omit=optional cheerio node-fetch@2
+
+      - name: Run scraper
+        run: node scrape.js
+
+      - name: Commit updated data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/latest.json data/history/*.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No data changes — nothing to commit."
+          else
+            git commit -m "chore: daily fish count update ($(date -u +%Y-%m-%d))"
+            git push
+          fi
