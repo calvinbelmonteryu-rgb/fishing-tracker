@@ -211,21 +211,30 @@ async function main() {
   const output = { fetchedAt: new Date().toISOString(), landings };
 
   // Ensure output dirs
-  const dataDir = path.join(__dirname, 'data');
+  const dataDir = path.join(__dirname, 'docs', 'data');
   const historyDir = path.join(dataDir, 'history');
   fs.mkdirSync(historyDir, { recursive: true });
 
   // Write latest
   fs.writeFileSync(path.join(dataDir, 'latest.json'), JSON.stringify(output, null, 2));
 
-  // Write per-source-date history snapshot (use first landing's date that has one)
+  // Write per-source-date history snapshot
   const sourceDate = landings.find(l => l.data?.date)?.data?.date;
   if (sourceDate) {
     fs.writeFileSync(path.join(historyDir, `${sourceDate}.json`), JSON.stringify(output, null, 2));
-    console.log(`Wrote data/latest.json and data/history/${sourceDate}.json`);
+    console.log(`Wrote docs/data/latest.json and docs/data/history/${sourceDate}.json`);
   } else {
-    console.log('Wrote data/latest.json (no source date detected)');
+    console.log('Wrote docs/data/latest.json (no source date detected)');
   }
+
+  // Write dates index so the static frontend knows which history files exist
+  const existingDates = fs.readdirSync(historyDir)
+    .filter(f => /^\d{4}-\d{2}-\d{2}\.json$/.test(f))
+    .map(f => f.replace('.json', ''))
+    .sort()
+    .reverse();
+  fs.writeFileSync(path.join(dataDir, 'dates.json'), JSON.stringify({ dates: existingDates }, null, 2));
+  console.log(`Updated docs/data/dates.json with ${existingDates.length} dates`);
 }
 
 main().catch((err) => {

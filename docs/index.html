@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>San Diego Fish Counts</title>
-  <link rel="manifest" href="/manifest.json">
+  <link rel="manifest" href="./manifest.json">
   <meta name="theme-color" content="#1565C0">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -276,15 +276,40 @@
       btn.textContent = 'Loading...';
 
       try {
-        const res = await fetch('/api/fishcounts');
-        const data = await res.json();
+        // Load latest scrape and history index from static JSON files
+        const [liveRes, datesRes] = await Promise.all([
+          fetch('./data/latest.json'),
+          fetch('./data/dates.json'),
+        ]);
+        const liveData = await liveRes.json();
+        const datesData = await datesRes.json();
 
-        const time = new Date(data.fetchedAt).toLocaleString();
+        const time = new Date(liveData.fetchedAt).toLocaleString();
         document.getElementById('lastUpdated').textContent = 'Updated: ' + time;
 
-        // Build grouped-by-date structure from live data
+        // Collect dates already covered by latest.json
+        const liveDates = new Set(
+          liveData.landings.map(l => l.data && l.data.date).filter(Boolean)
+        );
+
+        // Load past history files not already in latest
+        const pastDates = (datesData.dates || []).filter(d => !liveDates.has(d)).slice(0, 13);
+        const historyResults = await Promise.allSettled(
+          pastDates.map(d => fetch('./data/history/' + d + '.json').then(r => r.json()))
+        );
+
+        // Merge all landings from every source
+        const allLandings = [...liveData.landings];
+        for (const r of historyResults) {
+          if (r.status === 'fulfilled' && r.value.landings) {
+            allLandings.push(...r.value.landings);
+          }
+        }
+
+        // Group by date
         const byDate = {};
-        for (const landing of data.landings) {
+        const tripOrder = ['1/2 Day AM', '1/2 Day PM', '1/2 Day', '3/4 Day', 'Full Day', 'Full Day Coronado Islands', '1.5 Day', '2 Day', '3 Day', 'Open Party'];
+        for (const landing of allLandings) {
           if (landing.error || !landing.data || !landing.data.entries) continue;
           const date = landing.data.date || 'Unknown';
           if (!byDate[date]) byDate[date] = [];
@@ -295,29 +320,6 @@
           }
         }
 
-        const todayDates = new Set(Object.keys(byDate));
-
-        // Fetch history
-        const datesRes = await fetch('/api/history/dates?limit=14');
-        const datesData = await datesRes.json();
-        const pastDates = datesData.dates.filter(d => !todayDates.has(d));
-
-        for (const date of pastDates) {
-          const dateRes = await fetch('/api/history/date/' + date);
-          const dateData = await dateRes.json();
-          if (!dateData.landings || dateData.landings.length === 0) continue;
-          if (!byDate[date]) byDate[date] = [];
-          for (const landing of dateData.landings) {
-            for (const e of landing.entries) {
-              if (e.fishCounts && e.fishCounts.length > 0) {
-                byDate[date].push({ landing: landing.name, boat: e.boat, tripType: e.tripType, anglers: e.anglers, fishCounts: e.fishCounts });
-              }
-            }
-          }
-        }
-
-        // Sort each date's entries
-        const tripOrder = ['1/2 Day AM', '1/2 Day PM', '1/2 Day', '3/4 Day', 'Full Day', 'Full Day Coronado Islands', '1.5 Day', '2 Day', '3 Day', 'Open Party'];
         for (const date of Object.keys(byDate)) {
           byDate[date].sort((a, b) => {
             const ai = tripOrder.findIndex(t => (a.tripType || '').toLowerCase().includes(t.toLowerCase()));
@@ -329,7 +331,6 @@
           });
         }
 
-        // Build allData sorted by date descending
         allData = Object.keys(byDate).sort().reverse().map(date => ({ date, entries: byDate[date] }));
 
         populateFilters();

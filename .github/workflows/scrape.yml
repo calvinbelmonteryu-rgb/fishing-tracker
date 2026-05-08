@@ -33,7 +33,7 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/latest.json data/history/*.json 2>/dev/null || true
+          git add docs/data/latest.json docs/data/dates.json docs/data/history/*.json 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "No data changes — nothing to commit."
           else
