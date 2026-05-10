@@ -308,7 +308,6 @@
 
         // Group by date
         const byDate = {};
-        const tripOrder = ['1/2 Day AM', '1/2 Day PM', '1/2 Day', '3/4 Day', 'Full Day', 'Full Day Coronado Islands', '1.5 Day', '2 Day', '3 Day', 'Open Party'];
         for (const landing of allLandings) {
           if (landing.error || !landing.data || !landing.data.entries) continue;
           const date = landing.data.date || 'Unknown';
@@ -322,11 +321,9 @@
 
         for (const date of Object.keys(byDate)) {
           byDate[date].sort((a, b) => {
-            const ai = tripOrder.findIndex(t => (a.tripType || '').toLowerCase().includes(t.toLowerCase()));
-            const bi = tripOrder.findIndex(t => (b.tripType || '').toLowerCase().includes(t.toLowerCase()));
-            const aIdx = ai >= 0 ? ai : 999;
-            const bIdx = bi >= 0 ? bi : 999;
-            if (aIdx !== bIdx) return aIdx - bIdx;
+            const ai = tripSortIndex(a.tripType);
+            const bi = tripSortIndex(b.tripType);
+            if (ai !== bi) return ai - bi;
             return (a.boat || '').localeCompare(b.boat || '');
           });
         }
@@ -343,22 +340,39 @@
       btn.textContent = 'Refresh';
     }
 
+    // Canonical trip categories for filtering and sorting
+    const TRIP_CANONICAL = ['1/2 Day', '3/4 Day', 'Full Day', 'Overnight', '1.5 Day', '2 Day', '3 Day', 'Open Party'];
+
+    function normalizeTrip(t) {
+      if (!t) return '';
+      const l = t.toLowerCase();
+      if (l.includes('1/2') || l.includes('half day')) return '1/2 Day';
+      if (l.includes('3/4'))                             return '3/4 Day';
+      if (l.includes('overnight'))                       return 'Overnight';
+      if (l.includes('1.5') || l.includes('1 1/2'))     return '1.5 Day';
+      if (/\b2.?day\b/.test(l))                         return '2 Day';
+      if (/\b3.?day\b/.test(l))                         return '3 Day';
+      if (l.includes('full'))                            return 'Full Day';
+      if (l.includes('open'))                            return 'Open Party';
+      return t;
+    }
+
+    function tripSortIndex(t) {
+      const idx = TRIP_CANONICAL.indexOf(normalizeTrip(t));
+      return idx >= 0 ? idx : 999;
+    }
+
     function populateFilters() {
       const tripSet = new Set();
       const boatSet = new Set();
       for (const { entries } of allData) {
         for (const e of entries) {
-          if (e.tripType) tripSet.add(e.tripType);
+          if (e.tripType) tripSet.add(normalizeTrip(e.tripType));
           if (e.boat) boatSet.add(e.boat);
         }
       }
 
-      const tripOrder = ['1/2 Day AM', '1/2 Day PM', '1/2 Day', '3/4 Day', 'Full Day', 'Full Day Coronado Islands', '1.5 Day', '2 Day', '3 Day', 'Open Party'];
-      const sortedTrips = [...tripSet].sort((a, b) => {
-        const ai = tripOrder.findIndex(t => a.toLowerCase().includes(t.toLowerCase()));
-        const bi = tripOrder.findIndex(t => b.toLowerCase().includes(t.toLowerCase()));
-        return (ai >= 0 ? ai : 999) - (bi >= 0 ? bi : 999);
-      });
+      const sortedTrips = [...tripSet].sort((a, b) => tripSortIndex(a) - tripSortIndex(b));
       const sortedBoats = [...boatSet].sort((a, b) => a.localeCompare(b));
 
       setOptions('filterTrip', sortedTrips);
@@ -392,7 +406,7 @@
 
       for (const { date, entries } of allData) {
         const filtered = entries.filter(e => {
-          if (tripFilter && e.tripType !== tripFilter) return false;
+          if (tripFilter && normalizeTrip(e.tripType) !== tripFilter) return false;
           if (boatFilter && e.boat !== boatFilter) return false;
           return true;
         });
