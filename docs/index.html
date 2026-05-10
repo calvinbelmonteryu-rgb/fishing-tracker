@@ -70,17 +70,15 @@
     /* Filter bar */
     .filter-bar {
       display: flex;
-      gap: 16px;
+      flex-direction: column;
+      gap: 14px;
       margin-bottom: 28px;
-      flex-wrap: wrap;
     }
 
     .filter-group {
       display: flex;
       flex-direction: column;
-      gap: 4px;
-      flex: 1;
-      min-width: 140px;
+      gap: 6px;
     }
 
     .filter-group label {
@@ -91,20 +89,32 @@
       color: #999;
     }
 
-    .filter-group select {
-      font-family: inherit;
-      font-size: 14px;
-      padding: 6px 10px;
-      border: 1px solid #ccc;
-      border-radius: 3px;
-      background: #fff;
-      color: #333;
-      cursor: pointer;
+    .chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
     }
 
-    .filter-group select:focus {
-      outline: none;
-      border-color: #aaa;
+    .chip {
+      padding: 5px 13px;
+      border-radius: 20px;
+      border: 1px solid #ccc;
+      background: #fff;
+      color: #444;
+      font-size: 13px;
+      font-family: inherit;
+      cursor: pointer;
+      user-select: none;
+      transition: background 0.1s, color 0.1s, border-color 0.1s;
+      white-space: nowrap;
+    }
+
+    .chip:hover { border-color: #aaa; background: #f5f5f5; }
+
+    .chip.active {
+      background: #1565C0;
+      color: #fff;
+      border-color: #1565C0;
     }
 
     .date-section {
@@ -247,16 +257,12 @@
 
     <div class="filter-bar">
       <div class="filter-group">
-        <label for="filterTrip">Trip Length</label>
-        <select id="filterTrip" onchange="applyFilters()">
-          <option value="">All</option>
-        </select>
+        <label>Trip Length</label>
+        <div class="chip-row" id="tripChips"></div>
       </div>
       <div class="filter-group">
-        <label for="filterBoat">Boat</label>
-        <select id="filterBoat" onchange="applyFilters()">
-          <option value="">All</option>
-        </select>
+        <label>Boat</label>
+        <div class="chip-row" id="boatChips"></div>
       </div>
     </div>
 
@@ -362,6 +368,9 @@
       return idx >= 0 ? idx : 999;
     }
 
+    let selectedTrips = new Set();
+    let selectedBoats = new Set();
+
     function populateFilters() {
       const tripSet = new Set();
       const boatSet = new Set();
@@ -371,34 +380,36 @@
           if (e.boat) boatSet.add(e.boat);
         }
       }
-
       const sortedTrips = [...tripSet].sort((a, b) => tripSortIndex(a) - tripSortIndex(b));
       const sortedBoats = [...boatSet].sort((a, b) => a.localeCompare(b));
-
-      setOptions('filterTrip', sortedTrips);
-      setOptions('filterBoat', sortedBoats);
+      buildChips('tripChips', sortedTrips, selectedTrips);
+      buildChips('boatChips', sortedBoats, selectedBoats);
     }
 
-    function setOptions(id, values) {
-      const sel = document.getElementById(id);
-      const current = sel.value;
-      while (sel.options.length > 1) sel.remove(1);
+    function buildChips(containerId, values, selectedSet) {
+      const container = document.getElementById(containerId);
+      container.innerHTML = '';
       for (const v of values) {
-        const opt = document.createElement('option');
-        opt.value = v;
-        opt.textContent = v;
-        sel.appendChild(opt);
+        const chip = document.createElement('button');
+        chip.className = 'chip' + (selectedSet.has(v) ? ' active' : '');
+        chip.textContent = v;
+        chip.onclick = () => toggleChip(chip, v, selectedSet);
+        container.appendChild(chip);
       }
-      if (values.includes(current)) sel.value = current;
     }
 
-    function applyFilters() {
+    function toggleChip(chip, value, selectedSet) {
+      if (selectedSet.has(value)) {
+        selectedSet.delete(value);
+        chip.classList.remove('active');
+      } else {
+        selectedSet.add(value);
+        chip.classList.add('active');
+      }
       renderContent();
     }
 
     function renderContent() {
-      const tripFilter = document.getElementById('filterTrip').value;
-      const boatFilter = document.getElementById('filterBoat').value;
       const content = document.getElementById('content');
 
       let html = '';
@@ -406,8 +417,8 @@
 
       for (const { date, entries } of allData) {
         const filtered = entries.filter(e => {
-          if (tripFilter && normalizeTrip(e.tripType) !== tripFilter) return false;
-          if (boatFilter && e.boat !== boatFilter) return false;
+          if (selectedTrips.size > 0 && !selectedTrips.has(normalizeTrip(e.tripType))) return false;
+          if (selectedBoats.size > 0 && !selectedBoats.has(e.boat)) return false;
           return true;
         });
 
