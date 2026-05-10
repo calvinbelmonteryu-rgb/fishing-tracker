@@ -70,15 +70,18 @@
     /* Filter bar */
     .filter-bar {
       display: flex;
-      flex-direction: column;
-      gap: 14px;
+      gap: 16px;
       margin-bottom: 28px;
+      flex-wrap: wrap;
     }
 
     .filter-group {
       display: flex;
       flex-direction: column;
-      gap: 6px;
+      gap: 4px;
+      flex: 1;
+      min-width: 140px;
+      position: relative;
     }
 
     .filter-group label {
@@ -89,33 +92,80 @@
       color: #999;
     }
 
-    .chip-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
+    .multi-select-btn {
+      font-family: inherit;
+      font-size: 14px;
+      padding: 6px 30px 6px 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23999'/%3E%3C/svg%3E") no-repeat right 10px center;
+      color: #333;
+      cursor: pointer;
+      text-align: left;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
-    .chip {
-      padding: 5px 13px;
-      border-radius: 20px;
-      border: 1px solid #ccc;
+    .multi-select-btn:focus { outline: none; border-color: #aaa; }
+    .multi-select-btn.has-selection { border-color: #1565C0; color: #1565C0; font-weight: 500; }
+
+    .multi-select-panel {
+      display: none;
+      position: absolute;
+      top: calc(100% + 2px);
+      left: 0;
+      min-width: 100%;
+      max-height: 260px;
+      overflow-y: auto;
       background: #fff;
-      color: #444;
-      font-size: 13px;
-      font-family: inherit;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      z-index: 100;
+    }
+
+    .multi-select-panel.open { display: block; }
+
+    .multi-select-panel label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      font-size: 14px;
+      font-weight: 400;
+      text-transform: none;
+      letter-spacing: 0;
+      color: #333;
       cursor: pointer;
-      user-select: none;
-      transition: background 0.1s, color 0.1s, border-color 0.1s;
       white-space: nowrap;
     }
 
-    .chip:hover { border-color: #aaa; background: #f5f5f5; }
+    .multi-select-panel label:hover { background: #f5f5f5; }
 
-    .chip.active {
-      background: #1565C0;
-      color: #fff;
-      border-color: #1565C0;
+    .multi-select-panel label input[type=checkbox] {
+      accent-color: #1565C0;
+      width: 15px;
+      height: 15px;
+      flex-shrink: 0;
     }
+
+    .multi-select-panel .clear-btn {
+      display: block;
+      width: 100%;
+      padding: 7px 12px;
+      border: none;
+      border-top: 1px solid #eee;
+      background: none;
+      font-family: inherit;
+      font-size: 13px;
+      color: #999;
+      cursor: pointer;
+      text-align: left;
+    }
+
+    .multi-select-panel .clear-btn:hover { color: #333; background: #f5f5f5; }
 
     .date-section {
       margin-bottom: 40px;
@@ -256,13 +306,15 @@
     </div>
 
     <div class="filter-bar">
-      <div class="filter-group">
+      <div class="filter-group" id="tripGroup">
         <label>Trip Length</label>
-        <div class="chip-row" id="tripChips"></div>
+        <button class="multi-select-btn" id="tripBtn" onclick="togglePanel('trip')">All</button>
+        <div class="multi-select-panel" id="tripPanel"></div>
       </div>
-      <div class="filter-group">
+      <div class="filter-group" id="boatGroup">
         <label>Boat</label>
-        <div class="chip-row" id="boatChips"></div>
+        <button class="multi-select-btn" id="boatBtn" onclick="togglePanel('boat')">All</button>
+        <div class="multi-select-panel" id="boatPanel"></div>
       </div>
     </div>
 
@@ -382,32 +434,56 @@
       }
       const sortedTrips = [...tripSet].sort((a, b) => tripSortIndex(a) - tripSortIndex(b));
       const sortedBoats = [...boatSet].sort((a, b) => a.localeCompare(b));
-      buildChips('tripChips', sortedTrips, selectedTrips);
-      buildChips('boatChips', sortedBoats, selectedBoats);
+      buildPanel('tripPanel', 'tripBtn', sortedTrips, selectedTrips);
+      buildPanel('boatPanel', 'boatBtn', sortedBoats, selectedBoats);
     }
 
-    function buildChips(containerId, values, selectedSet) {
-      const container = document.getElementById(containerId);
-      container.innerHTML = '';
+    function buildPanel(panelId, btnId, values, selectedSet) {
+      const panel = document.getElementById(panelId);
+      panel.innerHTML = '';
       for (const v of values) {
-        const chip = document.createElement('button');
-        chip.className = 'chip' + (selectedSet.has(v) ? ' active' : '');
-        chip.textContent = v;
-        chip.onclick = () => toggleChip(chip, v, selectedSet);
-        container.appendChild(chip);
+        const lbl = document.createElement('label');
+        const cb = document.createElement('input');
+        cb.type = 'checkbox';
+        cb.checked = selectedSet.has(v);
+        cb.onchange = () => { cb.checked ? selectedSet.add(v) : selectedSet.delete(v); updateBtn(btnId, selectedSet); renderContent(); };
+        lbl.appendChild(cb);
+        lbl.appendChild(document.createTextNode(v));
+        panel.appendChild(lbl);
+      }
+      const clear = document.createElement('button');
+      clear.className = 'clear-btn';
+      clear.textContent = 'Clear selection';
+      clear.onclick = () => { selectedSet.clear(); panel.querySelectorAll('input').forEach(cb => cb.checked = false); updateBtn(btnId, selectedSet); renderContent(); };
+      panel.appendChild(clear);
+      updateBtn(btnId, selectedSet);
+    }
+
+    function updateBtn(btnId, selectedSet) {
+      const btn = document.getElementById(btnId);
+      if (selectedSet.size === 0) {
+        btn.textContent = 'All';
+        btn.classList.remove('has-selection');
+      } else if (selectedSet.size === 1) {
+        btn.textContent = [...selectedSet][0];
+        btn.classList.add('has-selection');
+      } else {
+        btn.textContent = selectedSet.size + ' selected';
+        btn.classList.add('has-selection');
       }
     }
 
-    function toggleChip(chip, value, selectedSet) {
-      if (selectedSet.has(value)) {
-        selectedSet.delete(value);
-        chip.classList.remove('active');
-      } else {
-        selectedSet.add(value);
-        chip.classList.add('active');
-      }
-      renderContent();
+    function togglePanel(which) {
+      const panel = document.getElementById(which + 'Panel');
+      const other = document.getElementById(which === 'trip' ? 'boatPanel' : 'tripPanel');
+      other.classList.remove('open');
+      panel.classList.toggle('open');
     }
+
+    document.addEventListener('click', e => {
+      if (!e.target.closest('#tripGroup')) document.getElementById('tripPanel').classList.remove('open');
+      if (!e.target.closest('#boatGroup')) document.getElementById('boatPanel').classList.remove('open');
+    });
 
     function renderContent() {
       const content = document.getElementById('content');
