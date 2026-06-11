@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-11T18:27:32.902Z",
+  "fetchedAt": "2026-06-11T19:15:38.361Z",
   "landings": [
     {
       "name": "Seaforth Sportfishing",
@@ -305,111 +305,89 @@
       "name": "H&M Landing",
       "website": "https://www.hmlanding.com",
       "data": {
-        "date": "2026-06-10",
+        "date": "2026-06-11",
         "entries": [
           {
-            "date": "2026-06-10",
+            "date": "2026-06-11",
             "boat": "Premier",
             "tripType": "1/2 Day AM",
-            "anglers": 27,
+            "anglers": 40,
             "fishCounts": [
               {
                 "species": "Calico Bass",
-                "count": 123
-              },
-              {
-                "species": "Sand Bass",
-                "count": 12
+                "count": 47
               },
               {
                 "species": "Rockfish",
-                "count": 10
+                "count": 12
               },
               {
-                "species": "Barracuda",
-                "count": 3
+                "species": "Sand Bass",
+                "count": 6
+              },
+              {
+                "species": "Halibut",
+                "count": 1
               },
               {
                 "species": "Sheephead",
                 "count": 1
               }
             ]
-          },
-          {
-            "date": "2026-06-10",
-            "boat": "Horizon",
-            "tripType": "2.5 Day",
-            "anglers": 21,
-            "fishCounts": [
-              {
-                "species": "Yellowtail",
-                "count": 91
-              },
-              {
-                "species": "Dorado",
-                "count": 1
-              }
-            ]
-          },
-          {
-            "date": "2026-06-10",
-            "boat": "Old Glory",
-            "tripType": "Full Day Coronado Islands",
-            "anglers": 9,
-            "fishCounts": []
-          },
-          {
-            "date": "2026-06-10",
-            "boat": "Spirit of Adventure",
-            "tripType": "2 Day",
-            "anglers": 28,
-            "fishCounts": []
           }
         ],
         "dockTotals": [
           {
-            "species": "Calico Bass",
-            "count": 323
-          },
-          {
-            "species": "Rockfish",
-            "count": 317
-          },
-          {
             "species": "Yellowtail",
-            "count": 141
+            "count": 281
           },
           {
-            "species": "Red Rockfish",
-            "count": 113
-          },
-          {
-            "species": "Sheephead",
-            "count": 23
-          },
-          {
-            "species": "Bonito",
-            "count": 18
-          },
-          {
-            "species": "Barracuda",
-            "count": 18
-          },
-          {
-            "species": "Barred Sand Bass",
-            "count": 12
+            "species": "Calico Bass",
+            "count": 279
           },
           {
             "species": "Sand Bass",
-            "count": 6
+            "count": 125
           },
           {
-            "species": "Lingcod",
-            "count": 5
+            "species": "Rockfish",
+            "count": 109
+          },
+          {
+            "species": "Barred Sand Bass",
+            "count": 20
+          },
+          {
+            "species": "Sheephead",
+            "count": 17
           },
           {
             "species": "Whitefish",
+            "count": 10
+          },
+          {
+            "species": "Barracuda",
             "count": 5
+          },
+          {
+            "species": "Sculpin",
+            "count": 3
+          },
+          {
+            "species": "Dorado",
+            "count": 1
+          },
+          {
+            "species": "Lingcod",
+            "count": 1
+          },
+          {
+            "species": "Cabezon",
+            "count": 1
+          },
+          {
+            "species": "White Seabass",
+            "count": 1
           },
           {
             "species": "Halibut",
@@ -554,87 +532,65 @@
       "name": "H&M Landing",
       "website": "https://www.hmlanding.com",
       "data": {
-        "date": "2026-06-09",
+        "date": "2026-06-10",
         "entries": [
           {
-            "date": "2026-06-09",
+            "date": "2026-06-10",
             "boat": "Premier",
-            "tripType": "1/2 Day PM",
-            "anglers": 25,
+            "tripType": "1/2 Day AM",
+            "anglers": 27,
             "fishCounts": [
               {
                 "species": "Calico Bass",
-                "count": 125
+                "count": 123
               },
               {
-                "species": "Barracuda",
+                "species": "Sand Bass",
                 "count": 12
               },
               {
-                "species": "Halibut",
+                "species": "Rockfish",
+                "count": 10
+              },
+              {
+                "species": "Barracuda",
+                "count": 3
+              },
+              {
+                "species": "Sheephead",
                 "count": 1
               }
             ]
           },
           {
-            "date": "2026-06-09",
-            "boat": "Malihini",
-            "tripType": "3/4 Day",
-            "anglers": 20,
+            "date": "2026-06-10",
+            "boat": "Horizon",
+            "tripType": "2.5 Day",
+            "anglers": 21,
             "fishCounts": [
               {
-                "species": "Calico Bass",
-                "count": 50
+                "species": "Yellowtail",
+                "count": 91
               },
               {
-                "species": "Red Rockfish",
-                "count": 38
-              },
-              {
-                "species": "Rockfish",
-                "count": 16
-              },
-              {
-                "species": "Sheephead",
-                "count": 6
-              },
-              {
-                "species": "Lingcod",
-                "count": 5
-              },
-              {
-                "species": "Whitefish",
-                "count": 5
-              },
-              {
-                "species": "Barracuda",
-                "count": 5
+                "species": "Dorado",
+                "count": 1
               }
             ]
           },
           {
-            "date": "2026-06-09",
-            "boat": "Excalibur",
+            "date": "2026-06-10",
+            "boat": "Old Glory",
+            "tripType": "Full Day Coronado Islands",
+            "anglers": 9,
+            "fishCounts": []
+          },
+          {
+            "date": "2026-06-10",
+            "boat": "Spirit of Adventure",
             "tripType": "2 Day",
-            "anglers": 26,
-            "fishCounts": [
-              {
-                "species": "Rockfish",
-                "count": 250
-              },
-              {
-                "species": "Red Rockfish",
-                "count": 75
-              },
-              {
-                "species": "Yellowtail",
-                "count": 26
-              },
-              {
-                "species": "Bonito",
-                "count": 18
-              }
-            ]
+            "anglers": 28,
+            "fishCounts": []
           }
         ],
         "dockTotals": null
