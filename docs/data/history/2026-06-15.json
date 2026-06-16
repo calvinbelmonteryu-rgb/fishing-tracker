@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-16T18:57:48.603Z",
+  "fetchedAt": "2026-06-16T19:49:27.540Z",
   "landings": [
     {
       "name": "Seaforth Sportfishing",
@@ -352,101 +352,21 @@
       "name": "Fisherman's Landing",
       "website": "https://www.fishermanslanding.com",
       "data": {
-        "date": "2026-06-15",
+        "date": "2026-06-16",
         "entries": [
           {
-            "date": "2026-06-15",
-            "boat": "Dolphin",
-            "tripType": "1/2 Day AM",
-            "anglers": 52,
+            "date": "2026-06-16",
+            "boat": "Pegasus",
+            "tripType": "2 Day",
+            "anglers": 16,
             "fishCounts": [
-              {
-                "species": "Rockfish",
-                "count": 17
-              },
-              {
-                "species": "Calico Bass",
-                "count": 12
-              },
-              {
-                "species": "Sand Bass",
-                "count": 6
-              },
-              {
-                "species": "Sculpin",
-                "count": 5
-              },
-              {
-                "species": "Sheephead",
-                "count": 4
-              },
-              {
-                "species": "Barracuda",
-                "count": 2
-              },
-              {
-                "species": "Halibut",
-                "count": 1
-              }
-            ]
-          },
-          {
-            "date": "2026-06-15",
-            "boat": "Dolphin",
-            "tripType": "1/2 Day PM",
-            "anglers": 45,
-            "fishCounts": [
-              {
-                "species": "Barracuda",
-                "count": 16
-              },
-              {
-                "species": "Rockfish",
-                "count": 15
-              },
               {
                 "species": "Yellowtail",
-                "count": 14
-              },
-              {
-                "species": "Calico Bass",
-                "count": 9
-              },
-              {
-                "species": "Sand Bass",
-                "count": 9
-              },
-              {
-                "species": "Sculpin",
-                "count": 1
-              }
-            ]
-          },
-          {
-            "date": "2026-06-15",
-            "boat": "Poseidon",
-            "tripType": "2.5 Day",
-            "anglers": 21,
-            "fishCounts": [
-              {
-                "species": "Vermilion Rockfish",
-                "count": 71
-              },
-              {
-                "species": "Rockfish",
-                "count": 60
+                "count": 23
               },
               {
                 "species": "Bluefin Tuna",
-                "count": 16
-              },
-              {
-                "species": "Yellowtail",
-                "count": 7
-              },
-              {
-                "species": "Bonito",
-                "count": 6
+                "count": 21
               }
             ]
           }
@@ -454,48 +374,12 @@
         "extraEntries": [],
         "dockTotals": [
           {
-            "species": "Rockfish",
-            "count": 92
-          },
-          {
-            "species": "Vermilion Rockfish",
-            "count": 71
-          },
-          {
-            "species": "Calico Bass",
-            "count": 21
-          },
-          {
             "species": "Yellowtail",
-            "count": 21
-          },
-          {
-            "species": "Barracuda",
-            "count": 18
+            "count": 23
           },
           {
             "species": "Bluefin Tuna",
-            "count": 16
-          },
-          {
-            "species": "Sand Bass",
-            "count": 15
-          },
-          {
-            "species": "Sculpin",
-            "count": 6
-          },
-          {
-            "species": "Bonito",
-            "count": 6
-          },
-          {
-            "species": "Sheephead",
-            "count": 4
-          },
-          {
-            "species": "Halibut",
-            "count": 1
+            "count": 21
           }
         ]
       }
