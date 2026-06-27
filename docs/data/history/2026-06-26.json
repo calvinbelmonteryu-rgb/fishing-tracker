@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-27T16:18:29.300Z",
+  "fetchedAt": "2026-06-27T17:20:52.856Z",
   "landings": [
     {
       "name": "Seaforth Sportfishing",
@@ -467,6 +467,22 @@
         "entries": [
           {
             "date": "2026-06-26",
+            "boat": "Dolphin",
+            "tripType": "1/2 Day Twilight",
+            "anglers": 17,
+            "fishCounts": [
+              {
+                "species": "Sand Bass",
+                "count": 67
+              },
+              {
+                "species": "Sculpin",
+                "count": 12
+              }
+            ]
+          },
+          {
+            "date": "2026-06-26",
             "boat": "Pacific Queen",
             "tripType": "2 Day",
             "anglers": 28,
@@ -485,8 +501,16 @@
         "extraEntries": [],
         "dockTotals": [
           {
+            "species": "Sand Bass",
+            "count": 67
+          },
+          {
             "species": "Yellowtail",
             "count": 27
+          },
+          {
+            "species": "Sculpin",
+            "count": 12
           },
           {
             "species": "Bluefin Tuna",
