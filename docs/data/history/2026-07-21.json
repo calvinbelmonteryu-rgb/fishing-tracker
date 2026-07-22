@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-22T16:42:07.825Z",
+  "fetchedAt": "2026-07-22T17:39:32.043Z",
   "landings": [
     {
       "name": "Seaforth Sportfishing",
@@ -408,6 +408,22 @@
               {
                 "species": "Bluefin Tuna",
                 "count": 15
+              }
+            ]
+          },
+          {
+            "date": "2026-07-22",
+            "boat": "Legend",
+            "tripType": "3 Day",
+            "anglers": 29,
+            "fishCounts": [
+              {
+                "species": "Bluefin Tuna",
+                "count": 174
+              },
+              {
+                "species": "Yellowtail",
+                "count": 36
               }
             ]
           },
