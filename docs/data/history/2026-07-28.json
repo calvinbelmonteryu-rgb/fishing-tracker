@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-29T16:37:36.998Z",
+  "fetchedAt": "2026-07-29T17:35:04.394Z",
   "landings": [
     {
       "name": "Seaforth Sportfishing",
@@ -340,6 +340,26 @@
               {
                 "species": "Yellowfin Tuna",
                 "count": 9
+              }
+            ]
+          },
+          {
+            "date": "2026-07-29",
+            "boat": "Ocean Odyssey",
+            "tripType": "2.5 Day",
+            "anglers": 25,
+            "fishCounts": [
+              {
+                "species": "Yellowfin Tuna",
+                "count": 75
+              },
+              {
+                "species": "Yellowtail",
+                "count": 66
+              },
+              {
+                "species": "Dorado",
+                "count": 13
               }
             ]
           },
