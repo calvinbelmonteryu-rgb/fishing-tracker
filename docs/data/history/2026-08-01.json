@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-02T16:10:52.233Z",
+  "fetchedAt": "2026-08-02T17:12:36.862Z",
   "landings": [
     {
       "name": "Seaforth Sportfishing",
@@ -289,53 +289,29 @@
       "name": "Point Loma Sportfishing",
       "website": "https://www.pointlomasportfishing.com",
       "data": {
-        "date": "2026-08-01",
+        "date": "2026-08-02",
         "entries": [
           {
-            "date": "2026-08-01",
-            "boat": "Daily Double",
-            "tripType": "1/2 Day AM",
-            "anglers": 39,
+            "date": "2026-08-02",
+            "boat": "New Lo-An",
+            "tripType": "2.5 Day",
+            "anglers": 25,
             "fishCounts": [
               {
-                "species": "Barracuda",
-                "count": 101
-              },
-              {
-                "species": "Barred Sand Bass",
-                "count": 121
-              }
-            ]
-          },
-          {
-            "date": "2026-08-01",
-            "boat": "Daily Double",
-            "tripType": "1/2 Day PM",
-            "anglers": 35,
-            "fishCounts": [
-              {
-                "species": "Barred Sand Bass",
-                "count": 70
-              },
-              {
-                "species": "Barracuda",
-                "count": 40
+                "species": "Bluefin Tuna",
+                "count": 20
               },
               {
                 "species": "Yellowtail",
-                "count": 2
-              }
-            ]
-          },
-          {
-            "date": "2026-08-01",
-            "boat": "Point Loma",
-            "tripType": "Full Day",
-            "anglers": 18,
-            "fishCounts": [
+                "count": 14
+              },
               {
-                "species": "Yellowtail",
-                "count": 16
+                "species": "Dorado",
+                "count": 3
+              },
+              {
+                "species": "Yellowfin Tuna",
+                "count": 1
               }
             ]
           }
@@ -343,16 +319,20 @@
         "extraEntries": [],
         "dockTotals": [
           {
-            "species": "Barracuda",
-            "count": 141
+            "species": "Bluefin Tuna",
+            "count": 20
           },
           {
-            "species": "Barred Sand Bass",
-            "count": 191
+            "species": "Dorado",
+            "count": 3
+          },
+          {
+            "species": "Yellowfin Tuna",
+            "count": 1
           },
           {
             "species": "Yellowtail",
-            "count": 18
+            "count": 14
           }
         ]
       }
@@ -400,10 +380,6 @@
               {
                 "species": "Bluefin Tuna",
                 "count": 2
-              },
-              {
-                "species": "Striped Marlin",
-                "count": 1
               }
             ]
           },
