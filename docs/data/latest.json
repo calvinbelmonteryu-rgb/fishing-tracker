@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-13T16:07:24.357Z",
+  "fetchedAt": "2026-08-13T17:09:40.458Z",
   "landings": [
     {
       "name": "Seaforth Sportfishing",
@@ -285,21 +285,21 @@
       "name": "Point Loma Sportfishing",
       "website": "https://www.pointlomasportfishing.com",
       "data": {
-        "date": "2026-08-12",
+        "date": "2026-08-13",
         "entries": [
           {
-            "date": "2026-08-12",
-            "boat": "Mission Belle",
-            "tripType": "Full Day Coronado Islands",
-            "anglers": 10,
+            "date": "2026-08-13",
+            "boat": "New Lo-An",
+            "tripType": "3 Day",
+            "anglers": 20,
             "fishCounts": [
               {
-                "species": "Yellowtail",
-                "count": 11
+                "species": "Bluefin Tuna",
+                "count": 55
               },
               {
-                "species": "Halibut",
-                "count": 1
+                "species": "Yellowtail",
+                "count": 51
               }
             ]
           }
@@ -307,12 +307,12 @@
         "extraEntries": [],
         "dockTotals": [
           {
-            "species": "Halibut",
-            "count": 1
+            "species": "Bluefin Tuna",
+            "count": 55
           },
           {
             "species": "Yellowtail",
-            "count": 11
+            "count": 51
           }
         ]
       }
@@ -347,6 +347,30 @@
               },
               {
                 "species": "Skipjack Tuna",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "date": "2026-08-13",
+            "boat": "Legend",
+            "tripType": "4 Day",
+            "anglers": 21,
+            "fishCounts": [
+              {
+                "species": "Bluefin Tuna",
+                "count": 85
+              },
+              {
+                "species": "Yellowtail",
+                "count": 47
+              },
+              {
+                "species": "Dorado",
+                "count": 2
+              },
+              {
+                "species": "Yellowfin Tuna",
                 "count": 1
               }
             ]
