@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-16T15:33:48.037Z",
+  "fetchedAt": "2026-08-16T16:39:23.109Z",
   "landings": [
     {
       "name": "Seaforth Sportfishing",
@@ -688,6 +688,22 @@
           },
           {
             "date": "2026-08-16",
+            "boat": "Poseidon",
+            "tripType": "1.5 Day",
+            "anglers": 22,
+            "fishCounts": [
+              {
+                "species": "Yellowtail",
+                "count": 64
+              },
+              {
+                "species": "Dorado",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "date": "2026-08-16",
             "boat": "Tomahawk",
             "tripType": "2 Day",
             "anglers": 28,
@@ -715,11 +731,11 @@
         "dockTotals": [
           {
             "species": "Yellowtail",
-            "count": 52
+            "count": 116
           },
           {
             "species": "Dorado",
-            "count": 7
+            "count": 8
           },
           {
             "species": "Yellowfin Tuna",
