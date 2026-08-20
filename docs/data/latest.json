@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-20T15:46:34.542Z",
+  "fetchedAt": "2026-08-20T16:48:40.287Z",
   "landings": [
     {
       "name": "Seaforth Sportfishing",
@@ -509,21 +509,53 @@
                 "count": 2
               }
             ]
+          },
+          {
+            "date": "2026-08-20",
+            "boat": "Pacific Queen",
+            "tripType": "3 Day",
+            "anglers": 24,
+            "fishCounts": [
+              {
+                "species": "Yellowtail",
+                "count": 242
+              },
+              {
+                "species": "Dorado",
+                "count": 25
+              },
+              {
+                "species": "Yellowfin Tuna",
+                "count": 7
+              },
+              {
+                "species": "White Seabass",
+                "count": 1
+              }
+            ]
           }
         ],
         "extraEntries": [],
         "dockTotals": [
           {
             "species": "Yellowtail",
-            "count": 75
+            "count": 317
           },
           {
             "species": "Yellowfin Tuna",
-            "count": 28
+            "count": 35
+          },
+          {
+            "species": "Dorado",
+            "count": 25
           },
           {
             "species": "Bluefin Tuna",
             "count": 2
+          },
+          {
+            "species": "White Seabass",
+            "count": 1
           }
         ]
       }
