@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-23T15:34:10.026Z",
+  "fetchedAt": "2026-08-23T16:40:37.073Z",
   "landings": [
     {
       "name": "Seaforth Sportfishing",
@@ -292,6 +292,10 @@
               {
                 "species": "Bluefin Tuna",
                 "count": 25
+              },
+              {
+                "species": "Yellowfin Tuna",
+                "count": 4
               }
             ]
           },
@@ -352,6 +356,26 @@
               {
                 "species": "Dorado",
                 "count": 3
+              }
+            ]
+          },
+          {
+            "date": "2026-08-23",
+            "boat": "Top Gun 80",
+            "tripType": "2.5 Day",
+            "anglers": 9,
+            "fishCounts": [
+              {
+                "species": "Bluefin Tuna",
+                "count": 29
+              },
+              {
+                "species": "Yellowtail",
+                "count": 29
+              },
+              {
+                "species": "Dorado",
+                "count": 2
               }
             ]
           }
