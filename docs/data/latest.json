@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-29T00:00:11.063Z",
+  "fetchedAt": "2026-08-29T00:32:31.211Z",
   "landings": [
     {
       "name": "Seaforth Sportfishing",
@@ -64,6 +64,26 @@
               {
                 "species": "Calico Bass",
                 "count": 25
+              }
+            ]
+          },
+          {
+            "date": "2026-08-28",
+            "boat": "San Diego",
+            "tripType": "Full Day Coronado Islands",
+            "anglers": 30,
+            "fishCounts": [
+              {
+                "species": "Bonito",
+                "count": 71
+              },
+              {
+                "species": "Yellowtail",
+                "count": 41
+              },
+              {
+                "species": "Calico Bass",
+                "count": 3
               }
             ]
           },
@@ -168,14 +188,23 @@
             "boat": "Pacific Voyager",
             "tripType": "3 Day",
             "anglers": 11,
-            "fishCounts": []
+            "fishCounts": [
+              {
+                "species": "Bluefin Tuna",
+                "count": 66
+              },
+              {
+                "species": "Yellowtail",
+                "count": 4
+              }
+            ]
           }
         ],
         "extraEntries": [],
         "dockTotals": [
           {
             "species": "Bonito",
-            "count": 325
+            "count": 396
           },
           {
             "species": "Yellowfin Tuna",
@@ -183,15 +212,15 @@
           },
           {
             "species": "Bluefin Tuna",
-            "count": 107
-          },
-          {
-            "species": "Calico Bass",
-            "count": 46
+            "count": 173
           },
           {
             "species": "Yellowtail",
-            "count": 35
+            "count": 80
+          },
+          {
+            "species": "Calico Bass",
+            "count": 49
           },
           {
             "species": "Dorado",
@@ -302,6 +331,26 @@
       "data": {
         "date": "2026-08-28",
         "entries": [
+          {
+            "date": "2026-08-28",
+            "boat": "Daiwa Pacific",
+            "tripType": "Full Day",
+            "anglers": 12,
+            "fishCounts": [
+              {
+                "species": "Yellowfin Tuna",
+                "count": 3
+              },
+              {
+                "species": "Dorado",
+                "count": 2
+              },
+              {
+                "species": "Skipjack Tuna",
+                "count": 2
+              }
+            ]
+          },
           {
             "date": "2026-08-28",
             "boat": "Excalibur",
