@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-31T20:48:26.116Z",
+  "fetchedAt": "2026-08-31T21:27:22.830Z",
   "landings": [
     {
       "name": "Seaforth Sportfishing",
@@ -275,6 +275,26 @@
       "data": {
         "date": "2026-08-31",
         "entries": [
+          {
+            "date": "2026-08-31",
+            "boat": "Premier",
+            "tripType": "1/2 Day AM",
+            "anglers": 20,
+            "fishCounts": [
+              {
+                "species": "Bonito",
+                "count": 42
+              },
+              {
+                "species": "Sand Bass",
+                "count": 13
+              },
+              {
+                "species": "Yellowtail",
+                "count": 1
+              }
+            ]
+          },
           {
             "date": "2026-08-31",
             "boat": "Little G",
