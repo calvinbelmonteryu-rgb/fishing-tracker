@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-03T18:35:28.740Z",
+  "fetchedAt": "2026-09-03T19:16:41.649Z",
   "landings": [
     {
       "name": "Seaforth Sportfishing",
@@ -495,81 +495,21 @@
       "name": "Fisherman's Landing",
       "website": "https://www.fishermanslanding.com",
       "data": {
-        "date": "2026-09-02",
+        "date": "2026-09-03",
         "entries": [
           {
-            "date": "2026-09-02",
-            "boat": "Dolphin",
-            "tripType": "1/2 Day AM",
-            "anglers": 25,
+            "date": "2026-09-03",
+            "boat": "Islander",
+            "tripType": "3 Day",
+            "anglers": 10,
             "fishCounts": [
               {
-                "species": "Bonito",
-                "count": 25
+                "species": "Bluefin Tuna",
+                "count": 57
               },
               {
-                "species": "Yellowtail",
-                "count": 10
-              },
-              {
-                "species": "Sand Bass",
-                "count": 4
-              },
-              {
-                "species": "Calico Bass",
-                "count": 2
-              },
-              {
-                "species": "Sculpin",
-                "count": 2
-              },
-              {
-                "species": "Halibut",
-                "count": 1
-              }
-            ]
-          },
-          {
-            "date": "2026-09-02",
-            "boat": "Liberty",
-            "tripType": "3/4 Day",
-            "anglers": 26,
-            "fishCounts": [
-              {
-                "species": "Bonito",
-                "count": 52
-              },
-              {
-                "species": "Sand Bass",
-                "count": 10
-              },
-              {
-                "species": "Yellowtail",
-                "count": 7
-              },
-              {
-                "species": "Calico Bass",
-                "count": 1
-              },
-              {
-                "species": "Halibut",
-                "count": 1
-              }
-            ]
-          },
-          {
-            "date": "2026-09-02",
-            "boat": "Lucky B Sportfishing",
-            "tripType": "Full Day",
-            "anglers": 4,
-            "fishCounts": [
-              {
-                "species": "Yellowtail",
-                "count": 23
-              },
-              {
-                "species": "Bonito",
-                "count": 20
+                "species": "Dorado",
+                "count": 3
               }
             ]
           }
@@ -577,28 +517,12 @@
         "extraEntries": [],
         "dockTotals": [
           {
-            "species": "Bonito",
-            "count": 97
+            "species": "Bluefin Tuna",
+            "count": 57
           },
           {
-            "species": "Yellowtail",
-            "count": 40
-          },
-          {
-            "species": "Sand Bass",
-            "count": 14
-          },
-          {
-            "species": "Calico Bass",
+            "species": "Dorado",
             "count": 3
-          },
-          {
-            "species": "Sculpin",
-            "count": 2
-          },
-          {
-            "species": "Halibut",
-            "count": 2
           }
         ]
       }
