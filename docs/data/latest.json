@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-25T19:13:39.245Z",
+  "fetchedAt": "2026-09-25T20:01:08.326Z",
   "landings": [
     {
       "name": "Seaforth Sportfishing",
@@ -461,6 +461,30 @@
         "entries": [
           {
             "date": "2026-09-25",
+            "boat": "Premier",
+            "tripType": "1/2 Day AM",
+            "anglers": 43,
+            "fishCounts": [
+              {
+                "species": "Bonito",
+                "count": 187
+              },
+              {
+                "species": "Calico Bass",
+                "count": 10
+              },
+              {
+                "species": "Sheephead",
+                "count": 2
+              },
+              {
+                "species": "Yellowtail",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "date": "2026-09-25",
             "boat": "Excalibur",
             "tripType": "2 Day",
             "anglers": 27,
@@ -523,6 +547,34 @@
               {
                 "species": "Yellowtail",
                 "count": 2
+              }
+            ]
+          },
+          {
+            "date": "2026-09-25",
+            "boat": "Producer",
+            "tripType": "Overnight",
+            "anglers": 29,
+            "fishCounts": [
+              {
+                "species": "Yellowfin Tuna",
+                "count": 145
+              },
+              {
+                "species": "Bullet Tuna",
+                "count": 34
+              },
+              {
+                "species": "Dorado",
+                "count": 20
+              },
+              {
+                "species": "Yellowtail",
+                "count": 18
+              },
+              {
+                "species": "Skipjack Tuna",
+                "count": 3
               }
             ]
           }
