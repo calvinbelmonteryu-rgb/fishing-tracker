@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-07T20:34:48.576Z",
+  "fetchedAt": "2026-10-07T21:16:05.506Z",
   "landings": [
     {
       "name": "Seaforth Sportfishing",
@@ -511,69 +511,21 @@
       "name": "Fisherman's Landing",
       "website": "https://www.fishermanslanding.com",
       "data": {
-        "date": "2026-10-06",
+        "date": "2026-10-07",
         "entries": [
           {
-            "date": "2026-10-06",
-            "boat": "Dolphin",
-            "tripType": "3/4 Day",
-            "anglers": 16,
+            "date": "2026-10-07",
+            "boat": "Pacific Queen",
+            "tripType": "3 Day",
+            "anglers": null,
             "fishCounts": [
-              {
-                "species": "Calico Bass",
-                "count": 90
-              },
-              {
-                "species": "Bonito",
-                "count": 48
-              },
-              {
-                "species": "Sculpin",
-                "count": 36
-              },
-              {
-                "species": "Sheephead",
-                "count": 18
-              },
-              {
-                "species": "Yellowtail",
-                "count": 3
-              }
-            ]
-          },
-          {
-            "date": "2026-10-06",
-            "boat": "Liberty",
-            "tripType": "2 Day",
-            "anglers": 19,
-            "fishCounts": [
-              {
-                "species": "Yellowtail",
-                "count": 4
-              },
               {
                 "species": "Yellowfin Tuna",
-                "count": 4
+                "count": 35
               },
               {
                 "species": "Bluefin Tuna",
-                "count": 3
-              }
-            ]
-          },
-          {
-            "date": "2026-10-06",
-            "boat": "Pegasus",
-            "tripType": "2 Day",
-            "anglers": 11,
-            "fishCounts": [
-              {
-                "species": "Bluefin Tuna",
-                "count": 11
-              },
-              {
-                "species": "Yellowfin Tuna",
-                "count": 7
+                "count": 12
               },
               {
                 "species": "Yellowtail",
@@ -585,32 +537,16 @@
         "extraEntries": [],
         "dockTotals": [
           {
-            "species": "Calico Bass",
-            "count": 90
-          },
-          {
-            "species": "Bonito",
-            "count": 48
-          },
-          {
-            "species": "Sculpin",
-            "count": 36
-          },
-          {
-            "species": "Sheephead",
-            "count": 18
+            "species": "Yellowfin Tuna",
+            "count": 35
           },
           {
             "species": "Bluefin Tuna",
-            "count": 14
-          },
-          {
-            "species": "Yellowfin Tuna",
-            "count": 11
+            "count": 12
           },
           {
             "species": "Yellowtail",
-            "count": 8
+            "count": 1
           }
         ]
       }
