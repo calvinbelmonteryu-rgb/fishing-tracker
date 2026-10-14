@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-14T19:19:48.988Z",
+  "fetchedAt": "2026-10-14T20:10:37.789Z",
   "landings": [
     {
       "name": "Seaforth Sportfishing",
@@ -255,6 +255,38 @@
       "data": {
         "date": "2026-10-14",
         "entries": [
+          {
+            "date": "2026-10-14",
+            "boat": "Premier",
+            "tripType": "1/2 Day AM",
+            "anglers": 19,
+            "fishCounts": [
+              {
+                "species": "Sand Bass",
+                "count": 62
+              },
+              {
+                "species": "Calico Bass",
+                "count": 33
+              },
+              {
+                "species": "Bonito",
+                "count": 29
+              },
+              {
+                "species": "Sheephead",
+                "count": 8
+              },
+              {
+                "species": "Sculpin",
+                "count": 7
+              },
+              {
+                "species": "Yellowtail",
+                "count": 1
+              }
+            ]
+          },
           {
             "date": "2026-10-14",
             "boat": "Legend",
