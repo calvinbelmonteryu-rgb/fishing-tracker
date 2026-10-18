@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-18T18:03:38.821Z",
+  "fetchedAt": "2026-10-18T18:36:34.821Z",
   "landings": [
     {
       "name": "Seaforth Sportfishing",
@@ -209,80 +209,28 @@
       "name": "Point Loma Sportfishing",
       "website": "https://www.pointlomasportfishing.com",
       "data": {
-        "date": "2026-10-17",
+        "date": "2026-10-18",
         "entries": [
           {
-            "date": "2026-10-17",
-            "boat": "Daily Double",
-            "tripType": "1/2 Day AM",
-            "anglers": 26,
-            "fishCounts": [
-              {
-                "species": "Yellowtail",
-                "count": 3
-              },
-              {
-                "species": "Calico Bass",
-                "count": 10
-              },
-              {
-                "species": "Barred Sand Bass",
-                "count": 3
-              },
-              {
-                "species": "Bonito",
-                "count": 3
-              },
-              {
-                "species": "Sheephead",
-                "count": 1
-              }
-            ]
-          },
-          {
-            "date": "2026-10-17",
-            "boat": "Daily Double",
-            "tripType": "1/2 Day PM",
-            "anglers": 25,
-            "fishCounts": [
-              {
-                "species": "Calico Bass",
-                "count": 35
-              },
-              {
-                "species": "Barred Sand Bass",
-                "count": 36
-              },
-              {
-                "species": "Sculpin",
-                "count": 6
-              },
-              {
-                "species": "Sheephead",
-                "count": 1
-              },
-              {
-                "species": "White Seabass",
-                "count": 1
-              }
-            ]
-          },
-          {
-            "date": "2026-10-17",
-            "boat": "Mission Belle",
-            "tripType": "Full Day",
-            "anglers": 30,
+            "date": "2026-10-18",
+            "boat": "Wildcard 95",
+            "tripType": "2 Day",
+            "anglers": 27,
             "fishCounts": [
               {
                 "species": "Yellowfin Tuna",
-                "count": 30
+                "count": 10
               },
               {
-                "species": "Skipjack Tuna",
-                "count": 17
+                "species": "Yellowtail",
+                "count": 2
               },
               {
                 "species": "Wahoo",
+                "count": 2
+              },
+              {
+                "species": "Dorado",
                 "count": 1
               }
             ]
@@ -291,44 +239,20 @@
         "extraEntries": [],
         "dockTotals": [
           {
-            "species": "Barred Sand Bass",
-            "count": 39
-          },
-          {
-            "species": "Bonito",
-            "count": 3
-          },
-          {
-            "species": "Calico Bass",
-            "count": 45
-          },
-          {
-            "species": "Sculpin",
-            "count": 6
-          },
-          {
-            "species": "Sheephead",
-            "count": 2
-          },
-          {
-            "species": "Skipjack Tuna",
-            "count": 17
+            "species": "Dorado",
+            "count": 1
           },
           {
             "species": "Wahoo",
-            "count": 1
-          },
-          {
-            "species": "White Seabass",
-            "count": 1
+            "count": 2
           },
           {
             "species": "Yellowfin Tuna",
-            "count": 30
+            "count": 10
           },
           {
             "species": "Yellowtail",
-            "count": 3
+            "count": 2
           }
         ]
       }
