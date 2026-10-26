@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-26T20:26:54.452Z",
+  "fetchedAt": "2026-10-26T20:59:33.851Z",
   "landings": [
     {
       "name": "Seaforth Sportfishing",
@@ -77,6 +77,26 @@
           },
           {
             "date": "2026-10-26",
+            "boat": "Polaris Supreme",
+            "tripType": "3 Day",
+            "anglers": 24,
+            "fishCounts": [
+              {
+                "species": "Yellowfin Tuna",
+                "count": 65
+              },
+              {
+                "species": "Yellowtail",
+                "count": 9
+              },
+              {
+                "species": "Wahoo",
+                "count": 3
+              }
+            ]
+          },
+          {
+            "date": "2026-10-26",
             "boat": "Cortez",
             "tripType": "3.5 Day",
             "anglers": 13,
@@ -136,7 +156,7 @@
         "dockTotals": [
           {
             "species": "Yellowfin Tuna",
-            "count": 280
+            "count": 345
           },
           {
             "species": "Skipjack Tuna",
@@ -156,11 +176,11 @@
           },
           {
             "species": "Yellowtail",
-            "count": 16
+            "count": 25
           },
           {
             "species": "Wahoo",
-            "count": 12
+            "count": 15
           },
           {
             "species": "Calico Bass",
