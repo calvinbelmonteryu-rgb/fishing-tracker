@@ -1,77 +1,29 @@
 {
-  "fetchedAt": "2026-11-03T20:57:21.577Z",
+  "fetchedAt": "2026-11-03T21:43:55.034Z",
   "landings": [
     {
       "name": "Seaforth Sportfishing",
       "website": "https://www.seaforthlanding.com",
       "data": {
-        "date": "2026-11-02",
+        "date": "2026-11-03",
         "entries": [
           {
-            "date": "2026-11-02",
+            "date": "2026-11-03",
             "boat": "New Seaforth",
             "tripType": "1/2 Day AM",
-            "anglers": 42,
+            "anglers": 44,
             "fishCounts": [
               {
                 "species": "Yellowfin Tuna",
-                "count": 16
+                "count": 120
               },
               {
                 "species": "Skipjack Tuna",
-                "count": 13
+                "count": 25
               },
               {
                 "species": "Bullet Tuna",
-                "count": 4
-              }
-            ]
-          },
-          {
-            "date": "2026-11-02",
-            "boat": "New Seaforth",
-            "tripType": "1/2 Day PM",
-            "anglers": 38,
-            "fishCounts": [
-              {
-                "species": "Yellowfin Tuna",
-                "count": 75
-              },
-              {
-                "species": "Skipjack Tuna",
-                "count": 29
-              }
-            ]
-          },
-          {
-            "date": "2026-11-02",
-            "boat": "Sea Watch",
-            "tripType": "3/4 Day",
-            "anglers": 31,
-            "fishCounts": [
-              {
-                "species": "Yellowfin Tuna",
-                "count": 42
-              },
-              {
-                "species": "Skipjack Tuna",
-                "count": 40
-              }
-            ]
-          },
-          {
-            "date": "2026-11-02",
-            "boat": "San Diego",
-            "tripType": "Full Day Offshore",
-            "anglers": 35,
-            "fishCounts": [
-              {
-                "species": "Skipjack Tuna",
-                "count": 123
-              },
-              {
-                "species": "Yellowfin Tuna",
-                "count": 72
+                "count": 10
               }
             ]
           }
@@ -80,15 +32,15 @@
         "dockTotals": [
           {
             "species": "Yellowfin Tuna",
-            "count": 205
+            "count": 120
           },
           {
             "species": "Skipjack Tuna",
-            "count": 205
+            "count": 25
           },
           {
             "species": "Bullet Tuna",
-            "count": 4
+            "count": 10
           }
         ]
       }
