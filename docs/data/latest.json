@@ -1,89 +1,89 @@
 {
-  "fetchedAt": "2026-11-04T21:50:34.064Z",
+  "fetchedAt": "2026-11-05T21:27:13.440Z",
   "landings": [
     {
       "name": "Seaforth Sportfishing",
       "website": "https://www.seaforthlanding.com",
       "data": {
-        "date": "2026-11-03",
+        "date": "2026-11-04",
         "entries": [
           {
-            "date": "2026-11-03",
+            "date": "2026-11-04",
             "boat": "New Seaforth",
             "tripType": "1/2 Day AM",
-            "anglers": 44,
+            "anglers": 52,
             "fishCounts": [
               {
                 "species": "Yellowfin Tuna",
-                "count": 120
+                "count": 27
+              },
+              {
+                "species": "Skipjack Tuna",
+                "count": 7
+              },
+              {
+                "species": "Bullet Tuna",
+                "count": 5
+              }
+            ]
+          },
+          {
+            "date": "2026-11-04",
+            "boat": "New Seaforth",
+            "tripType": "1/2 Day PM",
+            "anglers": 56,
+            "fishCounts": [
+              {
+                "species": "Skipjack Tuna",
+                "count": 35
+              },
+              {
+                "species": "Yellowfin Tuna",
+                "count": 4
+              },
+              {
+                "species": "Barracuda",
+                "count": 2
+              },
+              {
+                "species": "Calico Bass",
+                "count": 2
+              }
+            ]
+          },
+          {
+            "date": "2026-11-04",
+            "boat": "Sea Watch",
+            "tripType": "3/4 Day",
+            "anglers": 34,
+            "fishCounts": [
+              {
+                "species": "Yellowfin Tuna",
+                "count": 66
               },
               {
                 "species": "Skipjack Tuna",
                 "count": 25
               },
               {
-                "species": "Bullet Tuna",
-                "count": 10
-              }
-            ]
-          },
-          {
-            "date": "2026-11-03",
-            "boat": "New Seaforth",
-            "tripType": "1/2 Day PM",
-            "anglers": 55,
-            "fishCounts": [
-              {
-                "species": "Yellowfin Tuna",
-                "count": 30
-              },
-              {
-                "species": "Skipjack Tuna",
-                "count": 29
-              },
-              {
-                "species": "Bullet Tuna",
-                "count": 10
-              }
-            ]
-          },
-          {
-            "date": "2026-11-03",
-            "boat": "Sea Watch",
-            "tripType": "3/4 Day",
-            "anglers": 21,
-            "fishCounts": [
-              {
-                "species": "Skipjack Tuna",
-                "count": 67
-              },
-              {
-                "species": "Yellowfin Tuna",
-                "count": 10
-              },
-              {
-                "species": "Bonito",
+                "species": "Striped Marlin",
                 "count": 1
               }
             ]
           },
           {
-            "date": "2026-11-03",
+            "date": "2026-11-04",
             "boat": "San Diego",
             "tripType": "Full Day Offshore",
             "anglers": 36,
             "fishCounts": [
               {
-                "species": "Yellowfin Tuna",
-                "count": 208
-              },
-              {
                 "species": "Skipjack Tuna",
-                "count": 68
+                "count": 175
               },
               {
-                "species": "Dorado",
-                "count": 4
+                "species": "Yellowfin Tuna",
+                "count": 56
               }
             ]
           }
@@ -91,23 +91,27 @@
         "extraEntries": [],
         "dockTotals": [
           {
-            "species": "Yellowfin Tuna",
-            "count": 368
+            "species": "Skipjack Tuna",
+            "count": 242
           },
           {
-            "species": "Skipjack Tuna",
-            "count": 189
+            "species": "Yellowfin Tuna",
+            "count": 153
           },
           {
             "species": "Bullet Tuna",
-            "count": 20
+            "count": 5
           },
           {
-            "species": "Dorado",
-            "count": 4
+            "species": "Barracuda",
+            "count": 2
           },
           {
-            "species": "Bonito",
+            "species": "Calico Bass",
+            "count": 2
+          },
+          {
+            "species": "Striped Marlin",
             "count": 1
           }
         ]
@@ -117,73 +121,29 @@
       "name": "Point Loma Sportfishing",
       "website": "https://www.pointlomasportfishing.com",
       "data": {
-        "date": "2026-11-03",
+        "date": "2026-11-04",
         "entries": [
           {
-            "date": "2026-11-03",
+            "date": "2026-11-04",
             "boat": "Daily Double",
             "tripType": "1/2 Day AM",
-            "anglers": 11,
+            "anglers": 35,
             "fishCounts": [
               {
-                "species": "Yellowfin Tuna",
-                "count": 15
-              },
-              {
-                "species": "Barred Sand Bass",
-                "count": 3
+                "species": "Calico Bass",
+                "count": 8
               },
               {
                 "species": "Bonito",
-                "count": 18
+                "count": 4
               },
               {
                 "species": "Skipjack Tuna",
-                "count": 65
-              },
-              {
-                "species": "Yellowtail",
-                "count": 1
-              },
-              {
-                "species": "Halibut",
-                "count": 1
-              }
-            ]
-          },
-          {
-            "date": "2026-11-03",
-            "boat": "Daily Double",
-            "tripType": "1/2 Day PM",
-            "anglers": 11,
-            "fishCounts": [
-              {
-                "species": "Barred Sand Bass",
-                "count": 5
-              },
-              {
-                "species": "Bonito",
                 "count": 2
               },
               {
-                "species": "Halibut",
+                "species": "Bullet Tuna",
                 "count": 1
-              },
-              {
-                "species": "White Seabass",
-                "count": 2
-              }
-            ]
-          },
-          {
-            "date": "2026-11-03",
-            "boat": "New Lo-An",
-            "tripType": "2 Day",
-            "anglers": 25,
-            "fishCounts": [
-              {
-                "species": "Yellowfin Tuna",
-                "count": 120
               }
             ]
           }
@@ -191,32 +151,119 @@
         "extraEntries": [],
         "dockTotals": [
           {
-            "species": "Barred Sand Bass",
+            "species": "Bonito",
+            "count": 4
+          },
+          {
+            "species": "Bullet Tuna",
+            "count": 1
+          },
+          {
+            "species": "Calico Bass",
             "count": 8
           },
           {
-            "species": "Bonito",
-            "count": 20
+            "species": "Skipjack Tuna",
+            "count": 2
+          }
+        ]
+      }
+    },
+    {
+      "name": "H&M Landing",
+      "website": "https://www.hmlanding.com",
+      "data": {
+        "date": "2026-11-05",
+        "entries": [
+          {
+            "date": "2026-11-05",
+            "boat": "Tradition",
+            "tripType": "1/2 Day Twilight",
+            "anglers": 10,
+            "fishCounts": [
+              {
+                "species": "Spiny Lobster",
+                "count": 63
+              }
+            ]
+          }
+        ],
+        "dockTotals": [
+          {
+            "species": "Yellowfin Tuna",
+            "count": 52
           },
           {
-            "species": "Halibut",
-            "count": 2
+            "species": "Spiny Lobster",
+            "count": 51
+          },
+          {
+            "species": "Bonito",
+            "count": 15
           },
           {
             "species": "Skipjack Tuna",
-            "count": 65
+            "count": 15
           },
           {
-            "species": "White Seabass",
-            "count": 2
-          },
-          {
-            "species": "Yellowfin Tuna",
-            "count": 135
+            "species": "Calico Bass",
+            "count": 8
           },
           {
             "species": "Yellowtail",
+            "count": 7
+          },
+          {
+            "species": "Dorado",
             "count": 1
+          },
+          {
+            "species": "Bullet Tuna",
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Fisherman's Landing",
+      "website": "https://www.fishermanslanding.com",
+      "data": {
+        "date": "2026-11-04",
+        "entries": [
+          {
+            "date": "2026-11-04",
+            "boat": "Tomahawk",
+            "tripType": "3/4 Day",
+            "anglers": 19,
+            "fishCounts": [
+              {
+                "species": "Yellowfin Tuna",
+                "count": 15
+              },
+              {
+                "species": "Bonito",
+                "count": 11
+              },
+              {
+                "species": "Skipjack Tuna",
+                "count": 9
+              }
+            ]
+          }
+        ],
+        "extraEntries": [],
+        "dockTotals": [
+          {
+            "species": "Yellowfin Tuna",
+            "count": 15
+          },
+          {
+            "species": "Bonito",
+            "count": 11
+          },
+          {
+            "species": "Skipjack Tuna",
+            "count": 9
           }
         ]
       }
@@ -262,193 +309,13 @@
                 "count": 1
               }
             ]
-          }
-        ],
-        "dockTotals": [
-          {
-            "species": "Yellowfin Tuna",
-            "count": 308
           },
           {
-            "species": "Skipjack Tuna",
-            "count": 191
-          },
-          {
-            "species": "Spiny Lobster",
-            "count": 43
-          },
-          {
-            "species": "Rockfish",
-            "count": 37
-          },
-          {
-            "species": "Bonito",
-            "count": 30
-          },
-          {
-            "species": "Sand Bass",
-            "count": 11
-          },
-          {
-            "species": "Barred Sand Bass",
-            "count": 8
-          },
-          {
-            "species": "Yellowtail",
-            "count": 4
-          },
-          {
-            "species": "Rock Crab",
-            "count": 2
-          },
-          {
-            "species": "White Seabass",
-            "count": 2
-          },
-          {
-            "species": "Halibut",
-            "count": 2
-          },
-          {
-            "species": "Wahoo",
-            "count": 1
-          },
-          {
-            "species": "Barracuda",
-            "count": 1
-          }
-        ]
-      }
-    },
-    {
-      "name": "Fisherman's Landing",
-      "website": "https://www.fishermanslanding.com",
-      "data": {
-        "date": "2026-11-01",
-        "entries": [
-          {
-            "date": "2026-11-01",
-            "boat": "Pacific Queen",
-            "tripType": "2 Day",
-            "anglers": 30,
-            "fishCounts": [
-              {
-                "species": "Yellowfin Tuna",
-                "count": 78
-              },
-              {
-                "species": "Wahoo",
-                "count": 3
-              },
-              {
-                "species": "Striped Marlin",
-                "count": 1
-              }
-            ]
-          }
-        ],
-        "extraEntries": [],
-        "dockTotals": [
-          {
-            "species": "Yellowfin Tuna",
-            "count": 78
-          },
-          {
-            "species": "Wahoo",
-            "count": 3
-          },
-          {
-            "species": "Striped Marlin",
-            "count": 1
-          }
-        ]
-      }
-    },
-    {
-      "name": "H&M Landing",
-      "website": "https://www.hmlanding.com",
-      "data": {
-        "date": "2026-11-03",
-        "entries": [
-          {
-            "date": "2026-11-03",
-            "boat": "Premier",
-            "tripType": "1/2 Day AM",
-            "anglers": 22,
-            "fishCounts": [
-              {
-                "species": "Yellowfin Tuna",
-                "count": 68
-              },
-              {
-                "species": "Rockfish",
-                "count": 37
-              },
-              {
-                "species": "Skipjack Tuna",
-                "count": 36
-              },
-              {
-                "species": "Sand Bass",
-                "count": 11
-              },
-              {
-                "species": "Bonito",
-                "count": 7
-              },
-              {
-                "species": "Yellowtail",
-                "count": 1
-              },
-              {
-                "species": "Barracuda",
-                "count": 1
-              }
-            ]
-          },
-          {
-            "date": "2026-11-03",
-            "boat": "Sea Adventure 80",
-            "tripType": "2 Day",
-            "anglers": 16,
-            "fishCounts": [
-              {
-                "species": "Yellowfin Tuna",
-                "count": 105
-              },
-              {
-                "species": "Skipjack Tuna",
-                "count": 90
-              },
-              {
-                "species": "Bonito",
-                "count": 3
-              },
-              {
-                "species": "Yellowtail",
-                "count": 2
-              },
-              {
-                "species": "Wahoo",
-                "count": 1
-              }
-            ]
-          },
-          {
-            "date": "2026-11-03",
-            "boat": "Tradition",
-            "tripType": "Lobster",
-            "anglers": 10,
-            "fishCounts": [
-              {
-                "species": "Spiny Lobster",
-                "count": 43
-              },
-              {
-                "species": "Rock Crab",
-                "count": 2
-              }
-            ]
+            "date": "2026-11-04",
+            "boat": "Spirit of Adventure",
+            "tripType": "11 Day",
+            "anglers": 20,
+            "fishCounts": []
           }
         ],
         "dockTotals": null
