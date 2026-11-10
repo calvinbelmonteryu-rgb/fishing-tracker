@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-09T23:45:40.743Z",
+  "fetchedAt": "2026-11-10T00:13:20.467Z",
   "landings": [
     {
       "name": "Seaforth Sportfishing",
@@ -30,12 +30,40 @@
                 "count": 1
               }
             ]
+          },
+          {
+            "date": "2026-11-09",
+            "boat": "Sea Watch",
+            "tripType": "3/4 Day",
+            "anglers": 32,
+            "fishCounts": [
+              {
+                "species": "Calico Bass",
+                "count": 96
+              },
+              {
+                "species": "Sand Bass",
+                "count": 8
+              },
+              {
+                "species": "Sculpin",
+                "count": 2
+              },
+              {
+                "species": "Yellowfin Tuna",
+                "count": 1
+              }
+            ]
           }
         ],
         "extraEntries": [],
         "dockTotals": [
           {
             "species": "Calico Bass",
+            "count": 104
+          },
+          {
+            "species": "Sand Bass",
             "count": 8
           },
           {
@@ -43,11 +71,19 @@
             "count": 7
           },
           {
+            "species": "Sculpin",
+            "count": 2
+          },
+          {
             "species": "Halibut",
             "count": 1
           },
           {
             "species": "Whitefish",
+            "count": 1
+          },
+          {
+            "species": "Yellowfin Tuna",
             "count": 1
           }
         ]
