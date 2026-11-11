@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-11T21:53:36.980Z",
+  "fetchedAt": "2026-11-11T22:39:43.599Z",
   "landings": [
     {
       "name": "Seaforth Sportfishing",
@@ -291,6 +291,22 @@
       "data": {
         "date": "2026-11-11",
         "entries": [
+          {
+            "date": "2026-11-11",
+            "boat": "Daiwa Pacific",
+            "tripType": "1/2 Day AM",
+            "anglers": 27,
+            "fishCounts": [
+              {
+                "species": "Skipjack Tuna",
+                "count": 30
+              },
+              {
+                "species": "Yellowfin Tuna",
+                "count": 7
+              }
+            ]
+          },
           {
             "date": "2026-11-11",
             "boat": "Daiwa Pacific",
