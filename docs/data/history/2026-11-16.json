@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-17T00:12:23.427Z",
+  "fetchedAt": "2026-11-17T22:51:23.959Z",
   "landings": [
     {
       "name": "Seaforth Sportfishing",
@@ -171,51 +171,27 @@
         "dockTotals": [
           {
             "species": "Yellowfin Tuna",
-            "count": 159
-          },
-          {
-            "species": "Barracuda",
-            "count": 85
-          },
-          {
-            "species": "Bonito",
-            "count": 51
-          },
-          {
-            "species": "Spiny Lobster",
-            "count": 50
-          },
-          {
-            "species": "Skipjack Tuna",
-            "count": 17
+            "count": 86
           },
           {
             "species": "Yellowtail",
-            "count": 11
+            "count": 65
           },
           {
-            "species": "Barred Sand Bass",
-            "count": 8
+            "species": "Spiny Lobster",
+            "count": 23
           },
           {
-            "species": "Red Rockfish",
+            "species": "Rock Crab",
             "count": 7
           },
           {
-            "species": "Rockfish",
-            "count": 5
-          },
-          {
-            "species": "Sand Bass",
-            "count": 5
+            "species": "Blue Marlin",
+            "count": 1
           },
           {
             "species": "Wahoo",
-            "count": 4
-          },
-          {
-            "species": "Dorado",
-            "count": 2
+            "count": 1
           }
         ]
       }
