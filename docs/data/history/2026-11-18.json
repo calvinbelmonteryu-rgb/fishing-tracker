@@ -1,0 +1,205 @@
+{
+  "fetchedAt": "2026-11-18T22:34:01.015Z",
+  "landings": [
+    {
+      "name": "Seaforth Sportfishing",
+      "website": "https://www.seaforthlanding.com",
+      "data": {
+        "date": "2026-11-18",
+        "entries": [
+          {
+            "date": "2026-11-18",
+            "boat": "Sea Watch",
+            "tripType": "1/2 Day AM",
+            "anglers": 22,
+            "fishCounts": [
+              {
+                "species": "Calico Bass",
+                "count": 27
+              },
+              {
+                "species": "Sand Bass",
+                "count": 3
+              },
+              {
+                "species": "Yellowtail",
+                "count": 1
+              }
+            ]
+          }
+        ],
+        "extraEntries": [],
+        "dockTotals": [
+          {
+            "species": "Calico Bass",
+            "count": 27
+          },
+          {
+            "species": "Sand Bass",
+            "count": 3
+          },
+          {
+            "species": "Yellowtail",
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Point Loma Sportfishing",
+      "website": "https://www.pointlomasportfishing.com",
+      "data": {
+        "date": "2026-11-16",
+        "entries": [
+          {
+            "date": "2026-11-16",
+            "boat": "New Lo-An",
+            "tripType": "3 Day",
+            "anglers": 17,
+            "fishCounts": [
+              {
+                "species": "Yellowtail",
+                "count": 65
+              },
+              {
+                "species": "Yellowfin Tuna",
+                "count": 86
+              },
+              {
+                "species": "Blue Marlin",
+                "count": 1
+              },
+              {
+                "species": "Wahoo",
+                "count": 1
+              }
+            ]
+          }
+        ],
+        "extraEntries": [],
+        "dockTotals": [
+          {
+            "species": "Blue Marlin",
+            "count": 1
+          },
+          {
+            "species": "Wahoo",
+            "count": 1
+          },
+          {
+            "species": "Yellowfin Tuna",
+            "count": 86
+          },
+          {
+            "species": "Yellowtail",
+            "count": 65
+          }
+        ]
+      }
+    },
+    {
+      "name": "H&M Landing",
+      "website": "https://www.hmlanding.com",
+      "data": {
+        "date": "2026-11-18",
+        "entries": [
+          {
+            "date": "2026-11-18",
+            "boat": "Tradition",
+            "tripType": "1/2 Day Twilight",
+            "anglers": 10,
+            "fishCounts": [
+              {
+                "species": "Spiny Lobster",
+                "count": 34
+              },
+              {
+                "species": "Rock Crab",
+                "count": 3
+              }
+            ]
+          }
+        ],
+        "extraEntries": [],
+        "dockTotals": [
+          {
+            "species": "Yellowfin Tuna",
+            "count": 86
+          },
+          {
+            "species": "Yellowtail",
+            "count": 65
+          },
+          {
+            "species": "Spiny Lobster",
+            "count": 23
+          },
+          {
+            "species": "Rock Crab",
+            "count": 7
+          },
+          {
+            "species": "Blue Marlin",
+            "count": 1
+          },
+          {
+            "species": "Wahoo",
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Fisherman's Landing",
+      "website": "https://www.fishermanslanding.com",
+      "data": {
+        "date": "2026-11-15",
+        "entries": [
+          {
+            "date": "2026-11-15",
+            "boat": "Pacific Queen",
+            "tripType": "3 Day",
+            "anglers": 24,
+            "fishCounts": [
+              {
+                "species": "Yellowfin Tuna",
+                "count": 126
+              },
+              {
+                "species": "Yellowtail",
+                "count": 7
+              },
+              {
+                "species": "Wahoo",
+                "count": 4
+              },
+              {
+                "species": "Dorado",
+                "count": 2
+              }
+            ]
+          }
+        ],
+        "extraEntries": [],
+        "dockTotals": [
+          {
+            "species": "Yellowfin Tuna",
+            "count": 126
+          },
+          {
+            "species": "Yellowtail",
+            "count": 7
+          },
+          {
+            "species": "Wahoo",
+            "count": 4
+          },
+          {
+            "species": "Dorado",
+            "count": 2
+          }
+        ]
+      }
+    }
+  ]
+}

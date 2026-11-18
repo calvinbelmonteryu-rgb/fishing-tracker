@@ -1,57 +1,29 @@
 {
-  "fetchedAt": "2026-11-17T23:28:48.078Z",
+  "fetchedAt": "2026-11-18T22:34:01.015Z",
   "landings": [
     {
       "name": "Seaforth Sportfishing",
       "website": "https://www.seaforthlanding.com",
       "data": {
-        "date": "2026-11-16",
+        "date": "2026-11-18",
         "entries": [
           {
-            "date": "2026-11-16",
+            "date": "2026-11-18",
             "boat": "Sea Watch",
             "tripType": "1/2 Day AM",
-            "anglers": 25,
+            "anglers": 22,
             "fishCounts": [
               {
                 "species": "Calico Bass",
-                "count": 22
+                "count": 27
               },
               {
-                "species": "Bonito",
-                "count": 1
-              },
-              {
-                "species": "Skipjack Tuna",
-                "count": 1
-              },
-              {
-                "species": "Whitefish",
-                "count": 1
-              }
-            ]
-          },
-          {
-            "date": "2026-11-16",
-            "boat": "Pacific Voyager",
-            "tripType": "4 Day",
-            "anglers": 16,
-            "fishCounts": [
-              {
-                "species": "Yellowfin Tuna",
-                "count": 126
+                "species": "Sand Bass",
+                "count": 3
               },
               {
                 "species": "Yellowtail",
-                "count": 24
-              },
-              {
-                "species": "Wahoo",
-                "count": 4
-              },
-              {
-                "species": "Dorado",
-                "count": 2
+                "count": 1
               }
             ]
           }
@@ -59,35 +31,15 @@
         "extraEntries": [],
         "dockTotals": [
           {
-            "species": "Yellowfin Tuna",
-            "count": 126
+            "species": "Calico Bass",
+            "count": 27
+          },
+          {
+            "species": "Sand Bass",
+            "count": 3
           },
           {
             "species": "Yellowtail",
-            "count": 24
-          },
-          {
-            "species": "Calico Bass",
-            "count": 22
-          },
-          {
-            "species": "Wahoo",
-            "count": 4
-          },
-          {
-            "species": "Dorado",
-            "count": 2
-          },
-          {
-            "species": "Bonito",
-            "count": 1
-          },
-          {
-            "species": "Skipjack Tuna",
-            "count": 1
-          },
-          {
-            "species": "Whitefish",
             "count": 1
           }
         ]
@@ -149,25 +101,26 @@
       "name": "H&M Landing",
       "website": "https://www.hmlanding.com",
       "data": {
-        "date": "2026-11-16",
+        "date": "2026-11-18",
         "entries": [
           {
-            "date": "2026-11-16",
+            "date": "2026-11-18",
             "boat": "Tradition",
             "tripType": "1/2 Day Twilight",
             "anglers": 10,
             "fishCounts": [
               {
                 "species": "Spiny Lobster",
-                "count": 23
+                "count": 34
               },
               {
                 "species": "Rock Crab",
-                "count": 7
+                "count": 3
               }
             ]
           }
         ],
+        "extraEntries": [],
         "dockTotals": [
           {
             "species": "Yellowfin Tuna",
@@ -246,104 +199,6 @@
             "count": 2
           }
         ]
-      }
-    },
-    {
-      "name": "H&M Landing",
-      "website": "https://www.hmlanding.com",
-      "data": {
-        "date": "2026-11-15",
-        "entries": [
-          {
-            "date": "2026-11-15",
-            "boat": "Patriot (SD)",
-            "tripType": "1/2 Day Twilight",
-            "anglers": 10,
-            "fishCounts": [
-              {
-                "species": "Spiny Lobster",
-                "count": 22
-              }
-            ]
-          },
-          {
-            "date": "2026-11-15",
-            "boat": "Premier",
-            "tripType": "1/2 Day AM",
-            "anglers": 45,
-            "fishCounts": [
-              {
-                "species": "Barracuda",
-                "count": 33
-              },
-              {
-                "species": "Bonito",
-                "count": 28
-              },
-              {
-                "species": "Yellowfin Tuna",
-                "count": 22
-              },
-              {
-                "species": "Skipjack Tuna",
-                "count": 7
-              },
-              {
-                "species": "Rockfish",
-                "count": 5
-              },
-              {
-                "species": "Sand Bass",
-                "count": 5
-              },
-              {
-                "species": "Yellowtail",
-                "count": 1
-              }
-            ]
-          },
-          {
-            "date": "2026-11-15",
-            "boat": "Premier",
-            "tripType": "1/2 Day PM",
-            "anglers": 56,
-            "fishCounts": [
-              {
-                "species": "Barracuda",
-                "count": 29
-              },
-              {
-                "species": "Bonito",
-                "count": 23
-              },
-              {
-                "species": "Yellowfin Tuna",
-                "count": 11
-              },
-              {
-                "species": "Skipjack Tuna",
-                "count": 5
-              },
-              {
-                "species": "Yellowtail",
-                "count": 2
-              }
-            ]
-          },
-          {
-            "date": "2026-11-15",
-            "boat": "Tradition",
-            "tripType": "1/2 Day Twilight",
-            "anglers": 9,
-            "fishCounts": [
-              {
-                "species": "Spiny Lobster",
-                "count": 28
-              }
-            ]
-          }
-        ],
-        "dockTotals": null
       }
     }
   ]
