@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-26T00:16:16.641Z",
+  "fetchedAt": "2026-11-26T23:47:47.485Z",
   "landings": [
     {
       "name": "Seaforth Sportfishing",
@@ -25,6 +25,22 @@
           },
           {
             "date": "2026-11-25",
+            "boat": "New Seaforth",
+            "tripType": "1/2 Day PM",
+            "anglers": 55,
+            "fishCounts": [
+              {
+                "species": "Skipjack Tuna",
+                "count": 54
+              },
+              {
+                "species": "Yellowfin Tuna",
+                "count": 18
+              }
+            ]
+          },
+          {
+            "date": "2026-11-25",
             "boat": "Sea Watch",
             "tripType": "3/4 Day",
             "anglers": 35,
@@ -42,20 +58,44 @@
                 "count": 1
               }
             ]
+          },
+          {
+            "date": "2026-11-25",
+            "boat": "San Diego",
+            "tripType": "Full Day",
+            "anglers": 36,
+            "fishCounts": [
+              {
+                "species": "Yellowfin Tuna",
+                "count": 150
+              },
+              {
+                "species": "Skipjack Tuna",
+                "count": 113
+              },
+              {
+                "species": "Dorado",
+                "count": 1
+              }
+            ]
           }
         ],
         "extraEntries": [],
         "dockTotals": [
           {
             "species": "Yellowfin Tuna",
-            "count": 135
+            "count": 303
           },
           {
             "species": "Skipjack Tuna",
-            "count": 34
+            "count": 201
           },
           {
             "species": "Bonito",
+            "count": 1
+          },
+          {
+            "species": "Dorado",
             "count": 1
           }
         ]
@@ -82,17 +122,33 @@
                 "count": 12
               }
             ]
+          },
+          {
+            "date": "2026-11-25",
+            "boat": "Point Loma",
+            "tripType": "Full Day",
+            "anglers": 22,
+            "fishCounts": [
+              {
+                "species": "Yellowfin Tuna",
+                "count": 101
+              },
+              {
+                "species": "Skipjack Tuna",
+                "count": 16
+              }
+            ]
           }
         ],
         "extraEntries": [],
         "dockTotals": [
           {
             "species": "Skipjack Tuna",
-            "count": 12
+            "count": 28
           },
           {
             "species": "Yellowfin Tuna",
-            "count": 49
+            "count": 150
           }
         ]
       }
@@ -103,6 +159,13 @@
       "data": {
         "date": "2026-11-25",
         "entries": [
+          {
+            "date": "2026-11-25",
+            "boat": "Nautilus",
+            "tripType": "1/2 Day Twilight",
+            "anglers": 5,
+            "fishCounts": []
+          },
           {
             "date": "2026-11-25",
             "boat": "Premier",
@@ -151,38 +214,34 @@
         "dockTotals": [
           {
             "species": "Yellowfin Tuna",
-            "count": 287
+            "count": 227
           },
           {
             "species": "Skipjack Tuna",
-            "count": 42
+            "count": 130
           },
           {
             "species": "Bonito",
-            "count": 29
+            "count": 23
           },
           {
             "species": "Spiny Lobster",
-            "count": 24
+            "count": 20
           },
           {
-            "species": "Rockfish",
-            "count": 14
-          },
-          {
-            "species": "Sand Bass",
-            "count": 4
+            "species": "Rock Crab",
+            "count": 5
           },
           {
             "species": "Yellowtail",
-            "count": 2
-          },
-          {
-            "species": "Barracuda",
             "count": 1
           },
           {
-            "species": "Dorado",
+            "species": "Sand Bass",
+            "count": 1
+          },
+          {
+            "species": "Rockfish",
             "count": 1
           }
         ]
