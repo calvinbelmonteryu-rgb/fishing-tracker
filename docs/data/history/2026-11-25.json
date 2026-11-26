@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-25T23:35:32.747Z",
+  "fetchedAt": "2026-11-26T00:16:16.641Z",
   "landings": [
     {
       "name": "Seaforth Sportfishing",
@@ -192,25 +192,21 @@
       "name": "Fisherman's Landing",
       "website": "https://www.fishermanslanding.com",
       "data": {
-        "date": "2026-11-24",
+        "date": "2026-11-25",
         "entries": [
           {
-            "date": "2026-11-24",
+            "date": "2026-11-25",
             "boat": "Dolphin",
             "tripType": "3/4 Day",
             "anglers": 45,
             "fishCounts": [
               {
-                "species": "Yellowfin Tuna",
-                "count": 231
-              },
-              {
                 "species": "Skipjack Tuna",
-                "count": 19
+                "count": 102
               },
               {
-                "species": "Bonito",
-                "count": 8
+                "species": "Yellowfin Tuna",
+                "count": 16
               }
             ]
           }
@@ -218,16 +214,12 @@
         "extraEntries": [],
         "dockTotals": [
           {
-            "species": "Yellowfin Tuna",
-            "count": 231
-          },
-          {
             "species": "Skipjack Tuna",
-            "count": 19
+            "count": 102
           },
           {
-            "species": "Bonito",
-            "count": 8
+            "species": "Yellowfin Tuna",
+            "count": 16
           }
         ]
       }
